@@ -10,6 +10,7 @@ import { Heading } from "../../ui/ui/heading";
 import { HexBadge } from "../../ui/ui/hex-badge";
 import { LabelTab } from "../../ui/ui/label-tab";
 import { ThemeToggle } from "../../ui/ui/theme-toggle";
+import { SourceIslands } from "../../components/source-islands";
 
 const STEPS = [
   { icon: ListChecks, title: "Claims", body: "We read the skills a student states on LinkedIn and the resume, and map each to one of eight core concepts." },
@@ -48,6 +49,13 @@ export default function Landing() {
           </div>
         </section>
         <GuideLine dashed />
+
+        <section id="sources" className="py-14" aria-labelledby="sources-title">
+          <Heading level={2} size="xl" id="sources-title" className="mb-2">Claims, code and practice, in <em>one graph</em></Heading>
+          <p className="m-0 max-w-2xl text-fg-muted">LinkedIn says what a student claims, GitHub shows the code that proves it, and LeetCode adds problem-solving practice.</p>
+          <SourceIslands />
+        </section>
+        <GuideLine />
 
         <section className="grid gap-8 py-14 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]" aria-labelledby="problem">
           <div className="grid content-start gap-4">
