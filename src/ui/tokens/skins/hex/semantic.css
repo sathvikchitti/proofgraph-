@@ -1,0 +1,390 @@
+/* Hex skin, tiers 2 and 3. Generated once from a single light/dark declaration list so the two dark blocks cannot drift.
+   Select with <html data-skin="hex">. Light is the default; dark follows the OS or data-theme="dark". Nested [data-theme]
+   wrappers re-resolve. Keep the two dark blocks identical. */
+
+[data-skin="hex"],
+[data-skin="hex"] [data-theme="light"],
+[data-skin="hex"][data-theme="light"] {
+  --r-control: 3px;
+  --r-chip: 2px;
+  --r-card: 6px;
+  --r-overlay: 10px;
+  --r-pill: 9999px;
+
+  --font-ui: var(--font-plex-sans);
+  --font-code: var(--font-plex-mono);
+  --font-display: var(--font-archivo);
+  --font-serif: var(--font-instrument);
+
+  --ring-width: 2px;
+  --ring-offset: 2px;
+
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --control-height-sm: 28px;
+  --control-height-md: 38px;
+  --control-height-lg: 46px;
+  --control-px-sm: 10px;
+  --control-px-md: 16px;
+  --control-px-lg: 24px;
+  --pad-card: 18px;
+  --badge-radius: var(--r-chip);
+  --link-decoration: underline;
+
+  color-scheme: light;
+
+  --bg: var(--hx-p-paper-200);
+  --bg-raised: var(--hx-p-paper-0);
+  --bg-subtle: var(--hx-p-paper-muted);
+  --bg-hover: var(--hx-p-paper-hover);
+  --bg-active: var(--hx-p-paper-400);
+  --bg-overlay: color-mix(in srgb, var(--hx-p-ink-950) 48%, transparent);
+
+  --fg: var(--hx-p-ink-950);
+  --fg-muted: var(--hx-p-ink-600);
+  --fg-subtle: var(--hx-p-ink-500);
+  --fg-disabled: var(--hx-p-ink-200);
+  --fg-on-accent: var(--hx-p-paper-0);
+  --fg-link: var(--hx-p-violet-700);
+
+  --border: var(--hx-p-paper-500);
+  --border-strong: var(--hx-p-ink-200);
+  --border-ink: var(--hx-p-ink-700);
+  --ring: var(--hx-p-violet-500);
+
+  --accent: var(--hx-p-violet-600);
+  --accent-hover: var(--hx-p-violet-700);
+  --accent-active: var(--hx-p-violet-800);
+  --accent-subtle: var(--hx-p-violet-100);
+  --accent-fg: var(--hx-p-violet-700);
+  --accent-border: var(--hx-p-violet-200);
+  --accent-solid-fg: var(--hx-p-paper-0);
+
+  --neutral: var(--hx-p-ink-800);
+  --neutral-subtle: var(--hx-p-paper-300);
+  --neutral-fg: var(--hx-p-ink-700);
+  --neutral-border: var(--hx-p-paper-500);
+  --neutral-solid-fg: var(--hx-p-paper-0);
+
+  --info: var(--hx-p-blue-600);
+  --info-subtle: color-mix(in srgb, var(--info) 11%, transparent);
+  --info-border: color-mix(in srgb, var(--info) 35%, transparent);
+  --info-solid-fg: var(--hx-p-paper-0);
+  --info-fg: var(--hx-p-blue-600);
+
+  --success: var(--hx-p-green-600);
+  --success-subtle: color-mix(in srgb, var(--success) 11%, transparent);
+  --success-border: color-mix(in srgb, var(--success) 35%, transparent);
+  --success-solid-fg: var(--hx-p-paper-0);
+  --success-fg: color-mix(in srgb, var(--hx-p-green-600) 82%, var(--hx-p-ink-950));
+
+  --warning: var(--hx-p-amber-600);
+  --warning-subtle: color-mix(in srgb, var(--warning) 11%, transparent);
+  --warning-border: color-mix(in srgb, var(--warning) 35%, transparent);
+  --warning-solid-fg: var(--hx-p-paper-0);
+  --warning-fg: color-mix(in srgb, var(--hx-p-amber-600) 80%, var(--hx-p-ink-950));
+
+  --danger: var(--hx-p-red-600);
+  --danger-subtle: color-mix(in srgb, var(--danger) 11%, transparent);
+  --danger-border: color-mix(in srgb, var(--danger) 35%, transparent);
+  --danger-solid-fg: var(--hx-p-paper-0);
+  --danger-fg: color-mix(in srgb, var(--hx-p-red-600) 85%, var(--hx-p-ink-950));
+
+  --series-1: var(--hx-p-violet-500);
+  --series-2: var(--hx-p-blue-500);
+  --series-3: var(--hx-p-teal-600);
+  --series-4: var(--hx-p-orange-500);
+  --series-5: var(--hx-p-viridis-5);
+  --series-6: var(--hx-p-ink-400);
+
+  --sh-float: 0 1px 2px rgba(49, 38, 59, 0.08), 0 6px 18px rgba(49, 38, 59, 0.12), 0 0 0 1px var(--border);
+  --sh-overlay: 0 0 0 1px rgba(49, 38, 59, 0.1), 0 18px 40px -12px rgba(49, 38, 59, 0.16), 0 60px 90px -30px rgba(49, 38, 59, 0.14);
+
+  --shiki-token-keyword: var(--hx-p-violet-700);
+  --shiki-token-function: var(--hx-p-codeblue-600);
+  --shiki-token-constant: var(--hx-p-codeblue-600);
+  --shiki-token-string: var(--hx-p-green-600);
+  --shiki-token-string-expression: var(--hx-p-green-600);
+  --shiki-token-comment: var(--hx-p-ink-400);
+
+  /* new roles (no library equivalent) */
+  --cta-bg: var(--hx-p-blush-100);
+  --cta-bg-hover: var(--hx-p-blush-200);
+  --cta-fg: var(--hx-p-ink-950);
+  --cta-border: var(--hx-p-ink-700);
+  --handle-bg: var(--hx-p-paper-50);
+  --handle-border: var(--hx-p-ink-300);
+  --guide: rgba(49, 38, 59, 0.1);
+  --guide-dash: rgba(49, 38, 59, 0.16);
+  --badge-stroke: var(--hx-p-blush-400);
+  --badge-fill: var(--hx-p-blush-100);
+  --badge-icon: var(--hx-p-ink-700);
+  --traffic: #dcd8dc;
+  --grain-opacity: 0.35;
+  --grain-blend: multiply;
+
+  /* animation tokens read by the hex animation wrappers */
+  --hx-waves-horizon: #594c90;
+  --hx-waves-wave: #7d4f7b;
+  --hx-waves-crest: #ffffff;
+  --hx-dots-from: rgba(106, 101, 111, 0.55);
+  --hx-dots-to: rgba(106, 100, 112, 0.35);
+  --hx-dots-glow: #ddd5ea;
+  --hx-thought-ink: var(--fg-muted);
+  --hx-thought-glyph: var(--accent);
+  --hx-check-ink: var(--fg);
+  --hx-check-fill: var(--fg);
+  --hx-check-tick: var(--bg);
+  --hx-glass-base: rgba(255, 252, 252, 0.55);
+  --hx-glass-pill: rgba(255, 255, 255, 0.45);
+  --hx-glass-text: var(--fg);
+  --hx-glass-hover-fill: var(--fg);
+  --hx-glass-hover-text: var(--bg);
+  --hx-glass-border: rgba(255, 255, 255, 0.65);
+  --hx-glass-highlight: rgba(255, 255, 255, 0.8);
+  --hx-glass-shadow: 0 8px 28px rgba(49, 38, 59, 0.14);
+  --hx-glass-blur: 14px;
+  --hx-glass-fallback: rgba(255, 252, 252, 0.92);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-skin="hex"]:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --bg: #100e16;
+    --bg-raised: #1a1722;
+    --bg-subtle: #221e2b;
+    --bg-hover: #26212f;
+    --bg-active: #2f2a38;
+    --bg-overlay: color-mix(in srgb, #000 62%, transparent);
+
+    --fg: #efeaf1;
+    --fg-muted: #bdb5c4;
+    --fg-subtle: #9a94a8;
+    --fg-disabled: #6f6879;
+    --fg-on-accent: #100e16;
+    --fg-link: #c4bbf0;
+
+    --border: #2f2a38;
+    --border-strong: #4a4356;
+    --border-ink: #cfc6d6;
+    --ring: #a99de6;
+
+    --accent: #a99de6;
+    --accent-hover: #c4bbf0;
+    --accent-active: #d9d4f2;
+    --accent-subtle: #2c2648;
+    --accent-fg: #c4bbf0;
+    --accent-border: #463d72;
+    --accent-solid-fg: #100e16;
+
+    --neutral: #cfc6d6;
+    --neutral-subtle: #26212f;
+    --neutral-fg: #cfc6d6;
+    --neutral-border: #3a3443;
+    --neutral-solid-fg: #100e16;
+
+    --info: var(--hx-p-blue-400);
+    --info-subtle: color-mix(in srgb, var(--info) 11%, transparent);
+    --info-border: color-mix(in srgb, var(--info) 35%, transparent);
+    --info-solid-fg: #100e16;
+    --info-fg: var(--hx-p-blue-400);
+
+    --success: var(--hx-p-green-400);
+    --success-subtle: color-mix(in srgb, var(--success) 11%, transparent);
+    --success-border: color-mix(in srgb, var(--success) 35%, transparent);
+    --success-solid-fg: #100e16;
+    --success-fg: var(--hx-p-green-400);
+
+    --warning: var(--hx-p-amber-400);
+    --warning-subtle: color-mix(in srgb, var(--warning) 11%, transparent);
+    --warning-border: color-mix(in srgb, var(--warning) 35%, transparent);
+    --warning-solid-fg: #100e16;
+    --warning-fg: var(--hx-p-amber-400);
+
+    --danger: var(--hx-p-red-400);
+    --danger-subtle: color-mix(in srgb, var(--danger) 11%, transparent);
+    --danger-border: color-mix(in srgb, var(--danger) 35%, transparent);
+    --danger-solid-fg: #100e16;
+    --danger-fg: var(--hx-p-red-400);
+
+    --series-1: #8a7bd4;
+    --series-2: #7d9de0;
+    --series-3: var(--hx-p-teal-400);
+    --series-4: var(--hx-p-red-400);
+    --series-5: var(--hx-p-green-400);
+    --series-6: #9a94a8;
+
+    --sh-float: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.45), 0 0 0 1px var(--border);
+    --sh-overlay: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 18px 40px -12px rgba(0, 0, 0, 0.55), 0 60px 90px -30px rgba(0, 0, 0, 0.5);
+
+    --shiki-token-keyword: #c4bbf0;
+    --shiki-token-function: var(--hx-p-codeblue-400);
+    --shiki-token-constant: var(--hx-p-codeblue-400);
+    --shiki-token-string: #7ccf8f;
+    --shiki-token-string-expression: #7ccf8f;
+    --shiki-token-comment: #7d7486;
+
+    --cta-bg: var(--hx-p-blush-900);
+    --cta-bg-hover: #4a2a35;
+    --cta-fg: var(--hx-p-blush-100);
+    --cta-border: var(--hx-p-blush-400);
+    --handle-bg: #100e16;
+    --handle-border: #7d7486;
+    --guide: rgba(239, 234, 241, 0.07);
+    --guide-dash: rgba(239, 234, 241, 0.12);
+    --badge-stroke: #a8697a;
+    --badge-fill: #2a1a20;
+    --badge-icon: var(--hx-p-blush-200);
+    --traffic: #3a3443;
+    --grain-opacity: 0.22;
+    --grain-blend: screen;
+
+    --hx-waves-horizon: #3d3470;
+    --hx-waves-wave: #7d4f7b;
+    --hx-waves-crest: #f6dde1;
+    --hx-dots-from: #6a656f;
+    --hx-dots-to: #6a6470;
+    --hx-dots-glow: #322a3e;
+    --hx-thought-ink: var(--fg-muted);
+    --hx-thought-glyph: var(--accent);
+    --hx-check-ink: var(--fg);
+    --hx-check-fill: var(--fg);
+    --hx-check-tick: var(--bg);
+    --hx-glass-base: rgba(26, 23, 34, 0.5);
+    --hx-glass-pill: rgba(255, 255, 255, 0.06);
+    --hx-glass-text: var(--fg);
+    --hx-glass-hover-fill: var(--fg);
+    --hx-glass-hover-text: var(--bg);
+    --hx-glass-border: rgba(255, 255, 255, 0.1);
+    --hx-glass-highlight: rgba(255, 255, 255, 0.08);
+    --hx-glass-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+    --hx-glass-blur: 14px;
+    --hx-glass-fallback: rgba(26, 23, 34, 0.92);
+  }
+}
+
+[data-skin="hex"][data-theme="dark"],
+[data-skin="hex"] [data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #100e16;
+  --bg-raised: #1a1722;
+  --bg-subtle: #221e2b;
+  --bg-hover: #26212f;
+  --bg-active: #2f2a38;
+  --bg-overlay: color-mix(in srgb, #000 62%, transparent);
+
+  --fg: #efeaf1;
+  --fg-muted: #bdb5c4;
+  --fg-subtle: #9a94a8;
+  --fg-disabled: #6f6879;
+  --fg-on-accent: #100e16;
+  --fg-link: #c4bbf0;
+
+  --border: #2f2a38;
+  --border-strong: #4a4356;
+  --border-ink: #cfc6d6;
+  --ring: #a99de6;
+
+  --accent: #a99de6;
+  --accent-hover: #c4bbf0;
+  --accent-active: #d9d4f2;
+  --accent-subtle: #2c2648;
+  --accent-fg: #c4bbf0;
+  --accent-border: #463d72;
+  --accent-solid-fg: #100e16;
+
+  --neutral: #cfc6d6;
+  --neutral-subtle: #26212f;
+  --neutral-fg: #cfc6d6;
+  --neutral-border: #3a3443;
+  --neutral-solid-fg: #100e16;
+
+  --info: var(--hx-p-blue-400);
+  --info-subtle: color-mix(in srgb, var(--info) 11%, transparent);
+  --info-border: color-mix(in srgb, var(--info) 35%, transparent);
+  --info-solid-fg: #100e16;
+  --info-fg: var(--hx-p-blue-400);
+
+  --success: var(--hx-p-green-400);
+  --success-subtle: color-mix(in srgb, var(--success) 11%, transparent);
+  --success-border: color-mix(in srgb, var(--success) 35%, transparent);
+  --success-solid-fg: #100e16;
+  --success-fg: var(--hx-p-green-400);
+
+  --warning: var(--hx-p-amber-400);
+  --warning-subtle: color-mix(in srgb, var(--warning) 11%, transparent);
+  --warning-border: color-mix(in srgb, var(--warning) 35%, transparent);
+  --warning-solid-fg: #100e16;
+  --warning-fg: var(--hx-p-amber-400);
+
+  --danger: var(--hx-p-red-400);
+  --danger-subtle: color-mix(in srgb, var(--danger) 11%, transparent);
+  --danger-border: color-mix(in srgb, var(--danger) 35%, transparent);
+  --danger-solid-fg: #100e16;
+  --danger-fg: var(--hx-p-red-400);
+
+  --series-1: #8a7bd4;
+  --series-2: #7d9de0;
+  --series-3: var(--hx-p-teal-400);
+  --series-4: var(--hx-p-red-400);
+  --series-5: var(--hx-p-green-400);
+  --series-6: #9a94a8;
+
+  --sh-float: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.45), 0 0 0 1px var(--border);
+  --sh-overlay: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 18px 40px -12px rgba(0, 0, 0, 0.55), 0 60px 90px -30px rgba(0, 0, 0, 0.5);
+
+  --shiki-token-keyword: #c4bbf0;
+  --shiki-token-function: var(--hx-p-codeblue-400);
+  --shiki-token-constant: var(--hx-p-codeblue-400);
+  --shiki-token-string: #7ccf8f;
+  --shiki-token-string-expression: #7ccf8f;
+  --shiki-token-comment: #7d7486;
+
+  --cta-bg: var(--hx-p-blush-900);
+  --cta-bg-hover: #4a2a35;
+  --cta-fg: var(--hx-p-blush-100);
+  --cta-border: var(--hx-p-blush-400);
+  --handle-bg: #100e16;
+  --handle-border: #7d7486;
+  --guide: rgba(239, 234, 241, 0.07);
+  --guide-dash: rgba(239, 234, 241, 0.12);
+  --badge-stroke: #a8697a;
+  --badge-fill: #2a1a20;
+  --badge-icon: var(--hx-p-blush-200);
+  --traffic: #3a3443;
+  --grain-opacity: 0.22;
+  --grain-blend: screen;
+
+  --hx-waves-horizon: #3d3470;
+  --hx-waves-wave: #7d4f7b;
+  --hx-waves-crest: #f6dde1;
+  --hx-dots-from: #6a656f;
+  --hx-dots-to: #6a6470;
+  --hx-dots-glow: #322a3e;
+  --hx-thought-ink: var(--fg-muted);
+  --hx-thought-glyph: var(--accent);
+  --hx-check-ink: var(--fg);
+  --hx-check-fill: var(--fg);
+  --hx-check-tick: var(--bg);
+  --hx-glass-base: rgba(26, 23, 34, 0.5);
+  --hx-glass-pill: rgba(255, 255, 255, 0.06);
+  --hx-glass-text: var(--fg);
+  --hx-glass-hover-fill: var(--fg);
+  --hx-glass-hover-text: var(--bg);
+  --hx-glass-border: rgba(255, 255, 255, 0.1);
+  --hx-glass-highlight: rgba(255, 255, 255, 0.08);
+  --hx-glass-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  --hx-glass-blur: 14px;
+  --hx-glass-fallback: rgba(26, 23, 34, 0.92);
+}
+
+/* Tone hover shades: the default tone blocks hard-code cool-gray primitives, so re-derive them from the hex tokens. */
+[data-skin="hex"] [data-tone="neutral"] { --t-hover: color-mix(in srgb, var(--neutral) 82%, var(--fg)); }
+[data-skin="hex"] [data-tone="info"],
+[data-skin="hex"] [data-tone="success"],
+[data-skin="hex"] [data-tone="warning"],
+[data-skin="hex"] [data-tone="danger"] { --t-hover: color-mix(in srgb, var(--t) 86%, var(--fg)); }

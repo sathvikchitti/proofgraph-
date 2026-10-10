@@ -1,0 +1,44 @@
+{
+  "blob_sha": "6b81372bdb7588bc19a61ab69e18de30cb7bed85",
+  "evidence_id": "42639fea880aefeff8891f365d3e3da428be79dfab5019bc2016cdeaa1413078",
+  "file_path": "app/routers/products.py",
+  "line_end": 10,
+  "line_start": 10,
+  "lines": [
+    {
+      "is_evidence": false,
+      "number": 7,
+      "text": "async def get_product(product_id: int, refresh: bool = False) -> dict[str, int]:"
+    },
+    {
+      "is_evidence": false,
+      "number": 8,
+      "text": "    key = f'product:{product_id}'"
+    },
+    {
+      "is_evidence": false,
+      "number": 9,
+      "text": "    if refresh:"
+    },
+    {
+      "is_evidence": true,
+      "number": 10,
+      "text": "        cache.delete(key)"
+    },
+    {
+      "is_evidence": false,
+      "number": 11,
+      "text": "    cached = cache.get(key)"
+    },
+    {
+      "is_evidence": false,
+      "number": 12,
+      "text": "    if cached is None:"
+    },
+    {
+      "is_evidence": false,
+      "number": 13,
+      "text": "        if product_id < 1:"
+    }
+  ]
+}

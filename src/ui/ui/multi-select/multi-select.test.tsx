@@ -1,0 +1,3 @@
+import {screen} from "@testing-library/react"; import userEvent from "@testing-library/user-event"; import {renderUI} from "../../test/utils"; import {MultiSelect} from "./multi-select";
+const options=[{value:"ts",label:"TypeScript"},{value:"rs",label:"Rust"}];
+describe("MultiSelect",()=>{it("selects and clears options",async()=>{const onChange=vi.fn();renderUI(<MultiSelect label="Skills" options={options} onValueChange={onChange}/>);await userEvent.click(screen.getByRole("button",{name:"Skills"}));await userEvent.click(screen.getByRole("option",{name:/TypeScript/}));expect(onChange).toHaveBeenCalledWith(["ts"]);await userEvent.click(screen.getByRole("button",{name:"Clear all"}));expect(onChange).toHaveBeenLastCalledWith([])})});

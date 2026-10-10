@@ -1,0 +1,86 @@
+/* Tier 1 — primitives: raw palette and scales. Only a brand change edits this file. */
+:root,
+[data-brand] {
+  /* cool neutrals, slight blue bias */
+  --gray-0: #ffffff;
+  --gray-25: #fbfcfd;
+  --gray-50: #f6f8fa;
+  --gray-100: #eef1f5;
+  --gray-150: #e6eaf0;
+  --gray-200: #dce1e9;
+  --gray-300: #c7cfdb;
+  --gray-400: #9aa5b6;
+  --gray-500: #6f7c91;
+  --gray-600: #526076;
+  --gray-700: #3d4a5e;
+  --gray-800: #263143;
+  --gray-900: #172033;
+  --gray-950: #0d1422;
+
+  /* brand: one deep ink-blue */
+  --brand-50: #eef3fd;
+  --brand-100: #dbe6fa;
+  --brand-200: #bcd0f5;
+  --brand-300: #8fb0ec;
+  --brand-400: #5f8be0;
+  --brand-500: #3a6cd1;
+  --brand-600: #2554b5;
+  --brand-700: #1d4396;
+  --brand-800: #1a3778;
+  --brand-900: #172e5e;
+
+  --blue-50: #eff6fc;
+  --blue-100: #d8e9f8;
+  --blue-200: #b0d2f0;
+  --blue-400: #4f9ae0;
+  --blue-600: #0f6cb8;
+  --blue-700: #0c5894;
+  --blue-900: #0a3a63;
+
+  --green-50: #edf7f1;
+  --green-100: #d4eddc;
+  --green-200: #a9d9ba;
+  --green-400: #4cb87c;
+  --green-600: #1b7f48;
+  --green-700: #176a3c;
+  --green-900: #0f3f25;
+
+  --amber-50: #fdf6e7;
+  --amber-100: #faebc6;
+  --amber-200: #f3d68a;
+  --amber-400: #eab23a;
+  --amber-500: #d99100;
+  --amber-700: #8a5600;
+  --amber-900: #4d3000;
+
+  --red-50: #fdf0ef;
+  --red-100: #fadbd8;
+  --red-200: #f3b4ae;
+  --red-400: #ec7b72;
+  --red-600: #c8372d;
+  --red-700: #a52b22;
+  --red-900: #5f1812;
+
+  /* scales */
+  --radius-0: 0px;
+  --radius-1: 2px;
+  --radius-2: 4px;
+  --radius-3: 6px;
+  --radius-4: 8px;
+  --radius-5: 12px;
+  --radius-6: 16px;
+  --radius-full: 9999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --font-plex-sans: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-archivo: "Archivo", "Archivo Black", "Helvetica Neue", Arial, sans-serif;
+  --font-instrument: "Instrument Serif", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-plex-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}

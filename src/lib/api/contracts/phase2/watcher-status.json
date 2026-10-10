@@ -1,0 +1,8 @@
+{
+  "last_checked_at": "2026-01-01T00:00:00+00:00",
+  "last_error": null,
+  "latest_observed_sha": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "latest_scan_id": "scan-demo",
+  "repository_id": "repository-demo",
+  "status": "ready"
+}

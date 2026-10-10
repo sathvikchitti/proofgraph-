@@ -1,0 +1,763 @@
+/* hex-ui animations: built file, edit the sources in animations/ */
+/* animations/main-page/GradientWaves/GradientWaves.css */
+.gradient-waves-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* animations/main-page/DotField/DotField.css */
+.dot-field-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* animations/micro-animations/thoughtline/ThoughtLine.css */
+.thought-line {
+  --tl-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --tl-ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --tl-font: 16px;
+  --tl-color: currentColor;
+  --tl-glyph: currentColor;
+  --tl-settle: 350ms;
+  --tl-blur: 2px;
+  --tl-shimmer: 1.8s;
+  --tl-done: 0.75;
+  --tl-timer: 0.55;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--tl-color);
+  font-family: inherit;
+  font-size: var(--tl-font);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.thought-line__head {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  white-space: nowrap;
+  outline: none;
+  cursor: default;
+}
+
+.thought-line__head[data-toggle] {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.thought-line__glyph {
+  display: inline-flex;
+  flex: none;
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.2em;
+  color: var(--tl-glyph);
+}
+
+.thought-line__glyph svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.thought-line__dot {
+  width: 0.5em;
+  height: 0.5em;
+  margin: auto;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.thought-line__label {
+  display: inline-grid;
+}
+
+.thought-line__text {
+  grid-area: 1 / 1;
+  width: max-content;
+  opacity: 0;
+  filter: blur(var(--tl-blur));
+  transition:
+    opacity var(--tl-settle) var(--tl-ease-out),
+    filter var(--tl-settle) var(--tl-ease-out);
+}
+
+.thought-line__text[data-active] {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.thought-line__text--done[data-active] {
+  opacity: var(--tl-done);
+}
+
+.thought-line__breath {
+  display: inline-block;
+}
+
+.thought-line[data-working] .thought-line__breath[data-shimmer] {
+  background: linear-gradient(
+    100deg,
+    color-mix(in srgb, var(--tl-color) 50%, transparent) 30%,
+    var(--tl-color) 50%,
+    color-mix(in srgb, var(--tl-color) 50%, transparent) 70%
+  );
+  background-size: 250% 100%;
+  background-position: 125% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: thought-line-shimmer var(--tl-shimmer) linear infinite;
+}
+
+@keyframes thought-line-shimmer {
+  to {
+    background-position: -125% 0;
+  }
+}
+
+.thought-line__timer {
+  font-variant-numeric: tabular-nums;
+  opacity: var(--tl-timer);
+  transition:
+    opacity var(--tl-settle) ease,
+    transform var(--tl-settle) var(--tl-ease-in-out);
+}
+
+.thought-line__timer[data-done] {
+  opacity: var(--tl-done);
+}
+
+.thought-line__chevron {
+  display: inline-flex;
+  margin-left: 0.1em;
+  opacity: 0;
+  transition:
+    opacity 200ms ease,
+    transform 200ms var(--tl-ease-out);
+}
+
+.thought-line__chevron[data-on] {
+  opacity: 0.55;
+}
+
+.thought-line[data-open] .thought-line__chevron {
+  transform: rotate(180deg);
+}
+
+.thought-line__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.thought-line__trace {
+  display: grid;
+  grid-template-rows: 0fr;
+  width: 0;
+  min-width: 100%;
+  transition: grid-template-rows var(--tl-settle) var(--tl-ease-out);
+}
+
+.thought-line__trace[data-open] {
+  grid-template-rows: 1fr;
+}
+
+.thought-line__fold {
+  min-height: 0;
+  overflow-x: visible;
+  overflow-y: clip;
+}
+
+.thought-line__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;
+  width: max-content;
+  padding: 0.6em 0 0.2em 1.6em;
+  font-size: 0.875em;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.thought-line__step {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 200ms var(--tl-ease-out),
+    transform 200ms var(--tl-ease-out);
+}
+
+@starting-style {
+  .thought-line__step {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+.thought-line__mark {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 1em;
+  height: 1em;
+  opacity: 0.55;
+}
+
+.thought-line__pulse {
+  display: block;
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  background: currentColor;
+  animation: thought-line-pulse 1.6s var(--tl-ease-in-out) infinite;
+}
+
+@keyframes thought-line-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.thought-line__step-text {
+  transition: opacity var(--tl-settle) ease;
+}
+
+.thought-line__step[data-done] .thought-line__step-text {
+  opacity: 0.55;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .thought-line__text {
+    filter: none !important;
+    transition: opacity var(--tl-settle) ease;
+  }
+
+  .thought-line__timer {
+    transition: opacity var(--tl-settle) ease;
+  }
+
+  .thought-line__step {
+    transform: none !important;
+    transition: opacity 200ms ease;
+  }
+
+  .thought-line__pulse {
+    animation-duration: 2.4s;
+  }
+}
+
+/* animations/micro-animations/checkbox/SpringCheck.css */
+.spring-check {
+  --sc-ink: #ffffff;
+  --sc-fill: #ffffff;
+  --sc-check: #0b0b0f;
+  --sc-box: 28px;
+  --sc-radius: 9px;
+  --sc-font: 18px;
+  --sc-ring: 2px;
+  --sc-gap: 12px;
+  --sc-row: 44px;
+  --sc-rule: 1.5px;
+  --sc-origin: left center;
+  --sc-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sc-gap);
+  min-height: var(--sc-row);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--sc-ink);
+  font-family: inherit;
+  font-size: var(--sc-font);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: left;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  outline: none;
+}
+
+.spring-check:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.spring-check__press {
+  flex: none;
+  width: var(--sc-box);
+  height: var(--sc-box);
+  border-radius: var(--sc-radius);
+  transition: transform 160ms var(--sc-ease-out);
+}
+
+.spring-check[data-pressed] .spring-check__press {
+  transform: scale(0.95);
+}
+
+.spring-check:focus-visible .spring-check__press {
+  outline: 2px solid color-mix(in srgb, var(--sc-ink) 45%, transparent);
+  outline-offset: 3px;
+}
+
+.spring-check__box {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+  transform-origin: center;
+}
+
+.spring-check__ring {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 var(--sc-ring) var(--sc-ink);
+  opacity: 0.28;
+  transition: opacity 120ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .spring-check:not(:disabled):hover .spring-check__ring {
+    opacity: 0.5;
+  }
+}
+
+.spring-check__fill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--sc-fill);
+  transform-origin: center;
+}
+
+.spring-check__tick {
+  position: relative;
+  width: 68%;
+  height: 68%;
+  overflow: visible;
+  fill: none;
+  stroke: var(--sc-check);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.spring-check__label {
+  position: relative;
+  display: inline-block;
+}
+
+.spring-check__word {
+  display: inline-block;
+}
+
+.spring-check__rule {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 46%;
+  height: var(--sc-rule);
+  border-radius: 2px;
+  background: currentColor;
+  transform-origin: var(--sc-origin);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spring-check__press {
+    transition: none;
+  }
+}
+
+/* animations/micro-animations/pill-nav/PillNav.css */
+/* PillNav, from React Bits, adapted for hex-ui.
+   Changes from the original are marked "hex-ui:". The glass look lives in the
+   .pill-nav--glass block at the end and reads these variables (set inline by
+   PillNav from its props; HxPillNav passes the --hx-glass-* tokens):
+     --base        bar + logo tint            --pill-bg     pill tint
+     --pill-text   label colour               --hover-fill  hover flood + active dot
+     --hover-text  label colour on hover
+   Glass-only knobs (set by tokens.css, override per instance if needed):
+     --glass-blur  --glass-border  --glass-shadow  --glass-highlight           */
+
+.pill-nav-container {
+  position: absolute;
+  top: 1em;
+  z-index: 99;
+}
+
+@media (max-width: 768px) {
+  .pill-nav-container {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.pill-nav {
+  --nav-h: 42px;
+  --logo: 36px;
+  --pill-pad-x: 18px;
+  --pill-gap: 3px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .pill-nav {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background: transparent;
+  }
+}
+
+.pill-nav-items {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: var(--nav-h);
+  background: var(--base, #000);
+  border-radius: 9999px;
+}
+
+.pill-logo {
+  width: var(--nav-h);
+  height: var(--nav-h);
+  border-radius: 50%;
+  background: var(--base, #000);
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box; /* hex-ui: keep the logo circle the same height as the bar */
+}
+
+.pill-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* hex-ui: logo passed as a React node (inline SVG / wordmark) */
+.pill-logo-node {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--pill-text);
+}
+
+.pill-logo-node svg {
+  width: 100%;
+  height: 100%;
+}
+
+.pill-list {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  gap: var(--pill-gap);
+  margin: 0;
+  padding: 3px;
+  height: 100%;
+  box-sizing: border-box; /* hex-ui: pills sit inside the bar's 3px inset */
+}
+
+.pill-list > li {
+  display: flex;
+  height: 100%;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 var(--pill-pad-x);
+  background: var(--pill-bg, #fff);
+  color: var(--pill-text, var(--base, #000));
+  text-decoration: none;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.pill .hover-circle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-radius: 50%;
+  background: var(--hover-fill, var(--base, #000)); /* hex-ui: own colour */
+  z-index: 1;
+  display: block;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.pill .label-stack {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  z-index: 2;
+}
+
+.pill .pill-label {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 1;
+  will-change: transform;
+}
+
+.pill .pill-label-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--hover-text, #fff);
+  z-index: 3;
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.pill.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: var(--hover-fill, var(--base, #000)); /* hex-ui: own colour */
+  border-radius: 50px;
+  z-index: 4;
+}
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+}
+
+.mobile-menu-button {
+  width: var(--nav-h);
+  height: var(--nav-h);
+  border-radius: 50%;
+  background: var(--base, #000);
+  border: none;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: flex;
+  }
+}
+
+.hamburger-line {
+  width: 16px;
+  height: 2px;
+  background: var(--pill-text, #fff); /* hex-ui: was --pill-bg, invisible on glass */
+  border-radius: 1px;
+  transition: all 0.01s ease;
+  transform-origin: center;
+}
+
+.mobile-menu-popover {
+  position: absolute;
+  top: 3em;
+  left: 1rem;
+  right: 1rem;
+  background: var(--base, #f0f0f0);
+  border-radius: 27px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  z-index: 998;
+  opacity: 0;
+  transform-origin: top center;
+  visibility: hidden;
+}
+
+.mobile-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.mobile-menu-popover .mobile-menu-link {
+  display: block;
+  padding: 12px 16px;
+  color: var(--pill-text, #fff);
+  background-color: var(--pill-bg, #fff);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+
+.mobile-menu-popover .mobile-menu-link:hover {
+  cursor: pointer;
+  background-color: var(--hover-fill, var(--base)); /* hex-ui: own colour */
+  color: var(--hover-text, #fff);
+}
+
+/* hex-ui: visible keyboard focus */
+.pill-logo:focus-visible,
+.pill:focus-visible,
+.mobile-menu-button:focus-visible,
+.mobile-menu-link:focus-visible {
+  outline: 2px solid var(--hover-fill, currentColor);
+  outline-offset: 2px;
+}
+
+/* ===== hex-ui: glass ======================================================
+   Frosted, translucent surfaces. The tint comes from --base / --pill-bg, so
+   it changes with the site theme; the blur picks up whatever is behind it.  */
+
+.pill-nav--glass .pill-nav-items,
+.pill-nav--glass .pill-logo,
+.pill-nav--glass .mobile-menu-button,
+.mobile-menu-popover.pill-nav--glass {
+  -webkit-backdrop-filter: blur(var(--glass-blur, 14px)) saturate(160%);
+  backdrop-filter: blur(var(--glass-blur, 14px)) saturate(160%);
+  box-shadow:
+    inset 0 0 0 1px var(--glass-border, rgba(255, 255, 255, 0.4)),
+    inset 0 1px 0 var(--glass-highlight, rgba(255, 255, 255, 0.5)),
+    var(--glass-shadow, 0 8px 24px rgba(0, 0, 0, 0.12));
+}
+
+.pill-nav--glass .pill {
+  box-shadow: inset 0 0 0 1px var(--glass-border, rgba(255, 255, 255, 0.3));
+}
+
+.mobile-menu-popover.pill-nav--glass .mobile-menu-link {
+  background-color: var(--pill-bg);
+}
+
+/* Browsers without backdrop-filter get a more opaque tint so text stays readable */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .pill-nav--glass .pill-nav-items,
+  .pill-nav--glass .pill-logo,
+  .pill-nav--glass .mobile-menu-button,
+  .mobile-menu-popover.pill-nav--glass {
+    background: var(--glass-fallback, var(--base));
+  }
+}
+
+/* animations/micro-animations/pill-nav/HxPillNav.css */
+/* hex-ui: feeds the --hx-glass-* tokens (tokens.css) into PillNav's glass knobs.
+   Applies to the bar and the mobile popover (both carry .pill-nav--glass). */
+.pill-nav--glass {
+  --glass-blur: var(--hx-glass-blur);
+  --glass-border: var(--hx-glass-border);
+  --glass-highlight: var(--hx-glass-highlight);
+  --glass-shadow: var(--hx-glass-shadow);
+  --glass-fallback: var(--hx-glass-fallback);
+}
+
+/* animations/text-animations/staggered-text/StaggeredText.css */
+/* StaggeredText: layout only. Colour, font and size are inherited, so pass
+   kit classes (hx-display, hx-h2, hx-lead…) through className. */
+.staggered-text {
+  position: relative;
+}
+
+.staggered-text__row {
+  display: block;
+}
+
+/* Segments need inline-block so transforms and blur apply. */
+.staggered-text__seg {
+  display: inline-block;
+  will-change: transform, opacity, filter;
+}
+
+/* Keep a word's letters together when animating by character. */
+.staggered-text__word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.staggered-text__line {
+  display: block;
+}
+
+/* Invisible copy used to measure where lines wrap (segmentBy="lines"). */
+.staggered-text__measure {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

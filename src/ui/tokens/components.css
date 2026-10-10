@@ -1,0 +1,68 @@
+/* Tier 3 — component tokens: per-element fine-tuning. They default to semantic/density values and
+   are redeclared per scope so [data-density] wrappers re-resolve them. */
+:root,
+[data-theme],
+[data-density],
+[data-skin] {
+  /* density */
+  --control-height-sm: 28px;
+  --control-height-md: 36px;
+  --control-height-lg: 44px;
+  --control-px-sm: 10px;
+  --control-px-md: 12px;
+  --control-px-lg: 16px;
+  --row-height: 44px;
+  --pad-card: 16px;
+  --gap-stack: 16px;
+
+  --button-height-sm: var(--control-height-sm);
+  --button-height-md: var(--control-height-md);
+  --button-height-lg: var(--control-height-lg);
+  --button-px-sm: var(--control-px-sm);
+  --button-px-md: var(--control-px-md);
+  --button-px-lg: var(--control-px-lg);
+  --button-radius: var(--r-control);
+
+  --input-height-sm: var(--control-height-sm);
+  --input-height-md: var(--control-height-md);
+  --input-height-lg: var(--control-height-lg);
+  --input-px: var(--control-px-md);
+  --input-radius: var(--r-control);
+
+  --badge-radius: var(--r-pill);
+  --card-padding: var(--pad-card);
+  --card-radius: var(--r-card);
+  --table-row-height: var(--row-height);
+  --overlay-radius: var(--r-overlay);
+}
+
+:root,
+[data-skin] {
+  --link-decoration: underline;
+}
+
+:root,
+[data-skin] {
+  --meter-radial-stroke: 10;
+  --meter-linear-height-sm: 6px;
+  --meter-linear-height-md: 10px;
+  --meter-linear-height-lg: 14px;
+}
+
+:root,
+[data-skin] {
+  --sidebar-width: 16rem;
+  --sidebar-width-collapsed: 4rem;
+  --topbar-height: 3.5rem;
+}
+
+:root,
+[data-skin] {
+  --chart-line-width: 2;
+  --chart-area-opacity: 0.16;
+  --chart-grid-dash: 3 3;
+  --chart-bar-radius: 3;
+  --graph-node-size: 30;
+  --graph-edge-width: 1.5;
+  --graph-font-size: 11;
+}

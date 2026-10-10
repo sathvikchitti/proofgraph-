@@ -1,0 +1,13 @@
+{
+  "claimed_concepts": 5,
+  "claims_backed": 5,
+  "claims_required": false,
+  "claims_total": 5,
+  "honesty_score": 100,
+  "presentation_gaps": [
+    "Database Design",
+    "Asynchronous Work",
+    "CI/CD"
+  ],
+  "subtitle": "5/5 claims backed by self-authored code evidence"
+}

@@ -1,0 +1,2 @@
+import { cva } from "class-variance-authority";
+export const codeInputRecipe={root:cva("flex max-w-full flex-wrap gap-2"),cell:cva("rounded-(--input-radius) border border-border-strong bg-bg-raised text-center font-mono text-fg tabular caret-(--accent) focus-ring disabled:cursor-not-allowed disabled:opacity-60 aria-[invalid=true]:border-(color:--danger)",{variants:{size:{sm:"size-8 text-sm",md:"size-10 text-base",lg:"size-12 text-lg"}},defaultVariants:{size:"md"}}),separator:cva("flex items-center px-1 text-fg-subtle")};

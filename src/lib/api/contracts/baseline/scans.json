@@ -1,0 +1,21 @@
+[
+  {
+    "completed_at": "2026-10-10T02:14:57.983768Z",
+    "created_at": "2026-10-10T02:14:36.757106Z",
+    "id": "63ff8c68-2080-4ebe-ae81-160c5ec3cacb",
+    "metrics": {
+      "blobs_analysed": 40,
+      "blobs_skipped": 4,
+      "detector_cache_hits": 5,
+      "eligible_files": 45,
+      "evidence_accepted": 41,
+      "evidence_rejected": 1,
+      "total_duration_ms": 654,
+      "total_tracked_files": 49
+    },
+    "snapshot_id": "1813cd40-8f0d-43b1-84f3-08f6e2f7c262",
+    "started_at": "2026-10-10T02:14:57.333532Z",
+    "status": "completed",
+    "trigger_type": "manual"
+  }
+]

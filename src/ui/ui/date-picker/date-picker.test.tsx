@@ -1,0 +1,2 @@
+import {screen} from "@testing-library/react"; import userEvent from "@testing-library/user-event"; import {renderUI} from "../../test/utils"; import {DatePicker} from "./date-picker";
+describe("DatePicker",()=>{it("opens its calendar",async()=>{renderUI(<DatePicker label="Start date" defaultValue={new Date(2026,9,9)}/>);await userEvent.click(screen.getByRole("button",{name:"Start date"}));expect(screen.getByRole("grid")).toBeInTheDocument()})});

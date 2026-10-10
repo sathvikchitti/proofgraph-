@@ -1,0 +1,2 @@
+import {screen} from "@testing-library/react"; import userEvent from "@testing-library/user-event"; import {renderUI} from "../../test/utils"; import {Checkbox} from "./checkbox";
+describe("Checkbox",()=>{it("changes and supports indeterminate state",async()=>{const onChange=vi.fn();renderUI(<Checkbox label="Select all" defaultChecked="indeterminate" onCheckedChange={onChange}/>);const box=screen.getByRole("checkbox",{name:"Select all"});expect(box).toHaveAttribute("data-state","indeterminate");await userEvent.click(box);expect(onChange).toHaveBeenCalledWith(true)})});

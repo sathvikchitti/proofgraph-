@@ -1,0 +1,2 @@
+import {screen} from "@testing-library/react"; import userEvent from "@testing-library/user-event"; import {renderUI} from "../../test/utils"; import {RadioGroup} from "./radio-group";
+describe("RadioGroup",()=>{it("selects an option",async()=>{const onChange=vi.fn();renderUI(<RadioGroup label="Plan" options={[{value:"a",label:"Alpha"},{value:"b",label:"Beta"}]} onValueChange={onChange}/>);await userEvent.click(screen.getByRole("radio",{name:"Beta"}));expect(onChange).toHaveBeenCalledWith("b")})});

@@ -1,0 +1,1 @@
+import { cva } from "class-variance-authority"; export const csvImporterRecipe={root:cva("rounded-card border border-border bg-bg-raised p-4"),drop:cva("rounded-card border border-dashed border-border-strong p-6 text-center text-sm text-fg-muted"),table:cva("mt-3 w-full text-left text-xs"),cell:cva("border-b border-border px-2 py-1.5"),error:cva("mt-2 text-sm text-danger")};

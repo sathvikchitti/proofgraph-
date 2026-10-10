@@ -1,0 +1,1 @@
+import { cva } from "class-variance-authority"; export const entityHeaderRecipe={root:cva("flex flex-wrap items-start justify-between gap-4"),identity:cva("flex min-w-0 items-center gap-3"),title:cva("truncate text-xl font-semibold"),meta:cva("mt-1 flex flex-wrap gap-2 text-sm text-fg-muted"),badges:cva("mt-2 flex flex-wrap gap-1"),actions:cva("flex flex-wrap gap-2")};

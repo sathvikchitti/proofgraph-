@@ -1,0 +1,1 @@
+import { cva } from "class-variance-authority"; export const docsLayoutRecipe={root:cva("grid min-w-0 gap-6 lg:grid-cols-[14rem_minmax(0,1fr)_12rem]"),nav:cva("text-sm text-fg-muted"),content:cva("min-w-0"),toc:cva("hidden text-sm text-fg-muted lg:block")};

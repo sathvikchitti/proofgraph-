@@ -1,0 +1,2 @@
+/* Alternate skin changes semantic tokens only; component structure and public props are unchanged. */
+[data-skin="alt"] { --accent: var(--amber-600); --accent-hover: var(--amber-700); --accent-active: var(--amber-800); --accent-subtle: var(--amber-50); --accent-fg: var(--amber-800); --accent-border: var(--amber-200); --ring: var(--amber-500); --r-control: var(--radius-5); --r-chip: var(--radius-4); --r-card: var(--radius-6); --r-overlay: var(--radius-6); }

@@ -1,0 +1,4 @@
+"use client";
+/** DocsLayout — documentation navigation, prose region and table of contents. Deps: react, lib/cn, lib/skin. */
+import type { ReactNode } from "react"; import { cn } from "../../lib/cn"; import { useRecipe } from "../../lib/skin"; import type { ClassNames,StyleProps } from "../../lib/types"; import { docsLayoutRecipe } from "./docs-layout.recipe";
+export interface DocsLayoutProps extends StyleProps{nav?:ReactNode;toc?:ReactNode;children:ReactNode;classNames?:ClassNames<"root"|"nav"|"content"|"toc">} export function DocsLayout({nav,toc,children,className,classNames}:DocsLayoutProps){const r=useRecipe("docsLayout",docsLayoutRecipe);return <div className={cn(r.root(),className,classNames?.root)}><nav aria-label="Documentation" className={cn(r.nav(),classNames?.nav)}>{nav}</nav><main className={cn(r.content(),classNames?.content)}>{children}</main><aside aria-label="On this page" className={cn(r.toc(),classNames?.toc)}>{toc}</aside></div>}

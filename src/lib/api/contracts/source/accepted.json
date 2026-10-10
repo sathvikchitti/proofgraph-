@@ -1,0 +1,44 @@
+{
+  "blob_sha": "d974b6683dc182e5c1985f182eaed5b666d159ff",
+  "evidence_id": "e57c69a17c7f347092b7058309f73df41dfbf954831084fd233aa0d6b87b198d",
+  "file_path": "app/routers/auth.py",
+  "line_end": 9,
+  "line_start": 6,
+  "lines": [
+    {
+      "is_evidence": false,
+      "number": 3,
+      "text": "def verify_password(password: str) -> bool:"
+    },
+    {
+      "is_evidence": false,
+      "number": 4,
+      "text": "    return password == 'demo'"
+    },
+    {
+      "is_evidence": false,
+      "number": 5,
+      "text": "@router.post('/login')"
+    },
+    {
+      "is_evidence": true,
+      "number": 6,
+      "text": "async def login(password: str) -> dict[str, str]:"
+    },
+    {
+      "is_evidence": true,
+      "number": 7,
+      "text": "    if not verify_password(password):"
+    },
+    {
+      "is_evidence": true,
+      "number": 8,
+      "text": "        raise HTTPException(401, detail='invalid credentials')"
+    },
+    {
+      "is_evidence": true,
+      "number": 9,
+      "text": "    return {'token': 'demo'}"
+    }
+  ]
+}

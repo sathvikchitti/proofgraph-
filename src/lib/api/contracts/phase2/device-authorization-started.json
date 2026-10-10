@@ -1,0 +1,6 @@
+{
+  "attempt_id": "attempt-demo",
+  "expires_at": "2026-01-01T00:15:00+00:00",
+  "user_code": "ABCD-EFGH",
+  "verification_uri": "https://github.com/login/device"
+}

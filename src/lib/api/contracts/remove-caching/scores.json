@@ -1,0 +1,289 @@
+[
+  {
+    "badge": "Evidence-backed \u00b7 Quiz pending",
+    "concept_id": "asynchronous_work",
+    "created_at": "2026-10-10T02:15:00.782633+00:00",
+    "id": "a0f4b9e0-7a03-4bf9-b207-696164837c48",
+    "missing_signals": [
+      "background_job",
+      "queue_or_scheduler",
+      "retry_or_failure_handling"
+    ],
+    "organization_id": "bf38483a-410e-4a4f-b182-e90f93cd3454",
+    "score": 40,
+    "score_breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "async_entry"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "d7361e83d5a7893e110cf6a0343fee5dc5a9fc90624c3165fd6b8673a1889043",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "scoring_version": "v1",
+    "snapshot_id": "2fe432ad-482f-45cf-b76b-078544fb3f1f",
+    "status": "Weak",
+    "student_id": "0201cae4-e755-4c8a-970a-fa8f958d9011"
+  },
+  {
+    "badge": "Evidence-backed \u00b7 Quiz pending",
+    "concept_id": "authentication",
+    "created_at": "2026-10-10T02:15:00.782633+00:00",
+    "id": "bb0cb5cc-e72a-4602-a774-daa161522690",
+    "missing_signals": [
+      "protected_route",
+      "token_or_session_check",
+      "permission_decision"
+    ],
+    "organization_id": "bf38483a-410e-4a4f-b182-e90f93cd3454",
+    "score": 40,
+    "score_breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "credential_validation"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "89fe0fb8949c9401bbd0612389c2407ece0978ed7298f42aa0f63abb853b7b61",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "scoring_version": "v1",
+    "snapshot_id": "2fe432ad-482f-45cf-b76b-078544fb3f1f",
+    "status": "Weak",
+    "student_id": "0201cae4-e755-4c8a-970a-fa8f958d9011"
+  },
+  {
+    "badge": "Evidence-backed \u00b7 Quiz pending",
+    "concept_id": "automated_tests",
+    "created_at": "2026-10-10T02:15:00.782633+00:00",
+    "id": "53e1a7d5-06f5-480c-bc1f-321e393cb5ec",
+    "missing_signals": [
+      "fixture_or_mock",
+      "integration_boundary"
+    ],
+    "organization_id": "bf38483a-410e-4a4f-b182-e90f93cd3454",
+    "score": 40,
+    "score_breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 5,
+        "signals": [
+          "assertion",
+          "test_case"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "f62e28b63add949481cf251a946a01ef7929437ed6e896f28c5c2bfff5d55d76",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "scoring_version": "v1",
+    "snapshot_id": "2fe432ad-482f-45cf-b76b-078544fb3f1f",
+    "status": "Weak",
+    "student_id": "0201cae4-e755-4c8a-970a-fa8f958d9011"
+  },
+  {
+    "badge": "Evidence not yet found",
+    "concept_id": "caching",
+    "created_at": "2026-10-10T02:15:00.782633+00:00",
+    "id": "34c0db65-b397-49dd-8a02-daec66294a6d",
+    "missing_signals": [
+      "cache_read",
+      "cache_write",
+      "miss_fallback",
+      "invalidation",
+      "ttl"
+    ],
+    "organization_id": "bf38483a-410e-4a4f-b182-e90f93cd3454",
+    "score": 0,
+    "score_breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      },
+      "strongest_finding": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      }
+    },
+    "scoring_version": "v1",
+    "snapshot_id": "2fe432ad-482f-45cf-b76b-078544fb3f1f",
+    "status": "Unverified",
+    "student_id": "0201cae4-e755-4c8a-970a-fa8f958d9011"
+  },
+  {
+    "badge": "Evidence-backed \u00b7 Quiz pending",
+    "concept_id": "ci_cd",
+    "created_at": "2026-10-10T02:15:00.782633+00:00",
+    "id": "7e0b5bd9-9d85-4239-a974-8fd0e08f2a87",
+    "missing_signals": [
+      "build_or_deploy_step"
+    ],
+    "organization_id": "bf38483a-410e-4a4f-b182-e90f93cd3454",
+    "score": 70,
+    "score_breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 10,
+        "signals": [
+          "lint_or_typecheck",
+          "test_job",
+          "workflow"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "f0721a8a80f6bcf0c0d969d23383666aff5fe3213157aab424d19c583c6bc9ef",
+        "points": 55,
+        "signals": []
+      }
+    },
+    "scoring_version": "v1",
+    "snapshot_id": "2fe432ad-482f-45cf-b76b-078544fb3f1f",
+    "status": "Weak",
+    "student_id": "0201cae4-e755-4c8a-970a-fa8f958d9011"
+  },
+  {
+    "badge": "Evidence not yet found",
+    "concept_id": "database_design",
+    "created_at": "2026-10-10T02:15:00.782633+00:00",
+    "id": "5263cd45-4cef-499d-b628-6085424971d1",
+    "missing_signals": [
+      "model_or_schema",
+      "query",
+      "relationship_or_constraint",
+      "transaction_or_migration"
+    ],
+    "organization_id": "bf38483a-410e-4a4f-b182-e90f93cd3454",
+    "score": 0,
+    "score_breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      },
+      "strongest_finding": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      }
+    },
+    "scoring_version": "v1",
+    "snapshot_id": "2fe432ad-482f-45cf-b76b-078544fb3f1f",
+    "status": "Unverified",
+    "student_id": "0201cae4-e755-4c8a-970a-fa8f958d9011"
+  },
+  {
+    "badge": "Evidence-backed \u00b7 Quiz pending",
+    "concept_id": "error_handling",
+    "created_at": "2026-10-10T02:15:00.782633+00:00",
+    "id": "6bc1399b-729a-44bb-b47b-7cad96df73f2",
+    "missing_signals": [
+      "boundary_handler",
+      "error_logging"
+    ],
+    "organization_id": "bf38483a-410e-4a4f-b182-e90f93cd3454",
+    "score": 45,
+    "score_breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 5,
+        "signals": [
+          "domain_exception",
+          "structured_response"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "ef771b2e3ffc79146e8ffa42f6a88ae6a249023a423ea28a47d6698921b79302",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "scoring_version": "v1",
+    "snapshot_id": "2fe432ad-482f-45cf-b76b-078544fb3f1f",
+    "status": "Weak",
+    "student_id": "0201cae4-e755-4c8a-970a-fa8f958d9011"
+  },
+  {
+    "badge": "Evidence-backed \u00b7 Quiz pending",
+    "concept_id": "rest_apis",
+    "created_at": "2026-10-10T02:15:00.782633+00:00",
+    "id": "fe0b4911-13ca-44d7-8fa7-71c5e49bef78",
+    "missing_signals": [
+      "request_validation",
+      "response_schema",
+      "structured_error"
+    ],
+    "organization_id": "bf38483a-410e-4a4f-b182-e90f93cd3454",
+    "score": 40,
+    "score_breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "route_declaration"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "e57c69a17c7f347092b7058309f73df41dfbf954831084fd233aa0d6b87b198d",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "scoring_version": "v1",
+    "snapshot_id": "2fe432ad-482f-45cf-b76b-078544fb3f1f",
+    "status": "Weak",
+    "student_id": "0201cae4-e755-4c8a-970a-fa8f958d9011"
+  }
+]

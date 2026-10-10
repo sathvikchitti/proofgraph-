@@ -1,0 +1,203 @@
+/* Tier 2 — semantic roles. Themes (light/dark/…) remap this layer; components read only this and tier 3.
+   Selectors include [data-theme] so a nested wrapper re-resolves the values in its own scope. */
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: var(--gray-50);
+  --bg-raised: var(--gray-0);
+  --bg-subtle: var(--gray-100);
+  --bg-hover: var(--gray-100);
+  --bg-active: var(--gray-150);
+  --bg-overlay: color-mix(in srgb, var(--gray-950) 48%, transparent);
+
+  --fg: var(--gray-900);
+  --fg-muted: var(--gray-600);
+  --fg-subtle: var(--gray-500);
+  --fg-disabled: var(--gray-400);
+  --fg-on-accent: var(--gray-0);
+  --fg-link: var(--brand-700);
+
+  --border: var(--gray-200);
+  --border-strong: var(--gray-300);
+  --ring: var(--brand-500);
+
+  --accent: var(--brand-700);
+  --accent-hover: var(--brand-800);
+  --accent-active: var(--brand-900);
+  --accent-subtle: var(--brand-50);
+  --accent-fg: var(--brand-800);
+  --accent-border: var(--brand-200);
+  --accent-solid-fg: var(--gray-0);
+
+  --neutral: var(--gray-700);
+  --neutral-subtle: var(--gray-100);
+  --neutral-fg: var(--gray-700);
+  --neutral-border: var(--gray-200);
+  --neutral-solid-fg: var(--gray-0);
+
+  --info: var(--blue-600);
+  --info-subtle: var(--blue-50);
+  --info-fg: var(--blue-700);
+  --info-border: var(--blue-200);
+  --info-solid-fg: var(--gray-0);
+
+  --success: var(--green-600);
+  --success-subtle: var(--green-50);
+  --success-fg: var(--green-700);
+  --success-border: var(--green-200);
+  --success-solid-fg: var(--gray-0);
+
+  --warning: var(--amber-500);
+  --warning-subtle: var(--amber-50);
+  --warning-fg: var(--amber-700);
+  --warning-border: var(--amber-200);
+  --warning-solid-fg: var(--gray-900);
+
+  --danger: var(--red-600);
+  --danger-subtle: var(--red-50);
+  --danger-fg: var(--red-700);
+  --danger-border: var(--red-200);
+  --danger-solid-fg: var(--gray-0);
+
+  /* chart categorical series */
+  --series-1: var(--brand-600);
+  --series-2: var(--green-600);
+  --series-3: var(--amber-500);
+  --series-4: var(--red-600);
+  --series-5: var(--blue-400);
+  --series-6: var(--gray-500);
+
+  /* shape */
+  --r-control: var(--radius-3);
+  --r-chip: var(--radius-2);
+  --r-card: var(--radius-4);
+  --r-overlay: var(--radius-5);
+  --r-pill: var(--radius-full);
+
+  /* elevation: floating layers only */
+  --sh-float: 0 4px 16px -2px color-mix(in srgb, var(--gray-950) 14%, transparent), 0 0 0 1px var(--border);
+  --sh-overlay: 0 16px 48px -8px color-mix(in srgb, var(--gray-950) 28%, transparent), 0 0 0 1px var(--border);
+
+  /* type */
+  --font-ui: var(--font-plex-sans);
+  --font-code: var(--font-plex-mono);
+
+  /* focus ring */
+  --ring-width: 2px;
+  --ring-offset: 2px;
+
+  /* syntax highlighting (consumed by shiki's css-variables theme in CodeViewer) */
+  --shiki-foreground: var(--fg);
+  --shiki-token-keyword: var(--brand-700);
+  --shiki-token-function: var(--amber-700);
+  --shiki-token-constant: var(--blue-700);
+  --shiki-token-string: var(--green-700);
+  --shiki-token-string-expression: var(--green-700);
+  --shiki-token-comment: var(--gray-500);
+  --shiki-token-parameter: var(--fg);
+  --shiki-token-punctuation: var(--fg-muted);
+  --shiki-token-link: var(--fg-link);
+
+  /* paper-and-guides roles (used by PaperGrain, PageFrame, Arcs, CropMarks, HexBadge, AppWindow, selection handles) */
+  --border-ink: var(--gray-700);
+  --guide: color-mix(in srgb, var(--gray-900) 10%, transparent);
+  --guide-dash: color-mix(in srgb, var(--gray-900) 16%, transparent);
+  --badge-stroke: var(--brand-300);
+  --badge-fill: var(--brand-50);
+  --badge-icon: var(--brand-800);
+  --handle-bg: var(--gray-0);
+  --handle-border: var(--gray-400);
+  --traffic: var(--gray-200);
+  --grain-opacity: 0.25;
+  --grain-blend: multiply;
+  --grain-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.5  0 0 0 0 0.45  0 0 0 0 0.5  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  --font-display: var(--font-ui);
+  --font-serif: var(--font-instrument);
+
+  /* motion tokens read by the hex animations (blocks/motion). Hex strings: the WebGL waves cannot parse var(). */
+  --hx-waves-horizon: #2d4f9e;
+  --hx-waves-wave: #5f8be0;
+  --hx-waves-crest: #ffffff;
+  --hx-dots-from: rgba(82, 96, 118, 0.55);
+  --hx-dots-to: rgba(82, 96, 118, 0.35);
+  --hx-dots-glow: #dbe6fa;
+  --hx-thought-ink: var(--fg-muted);
+  --hx-thought-glyph: var(--accent);
+  --hx-check-ink: var(--fg);
+  --hx-check-fill: var(--fg);
+  --hx-check-tick: var(--bg);
+  --hx-glass-base: rgba(255, 255, 255, 0.55);
+  --hx-glass-pill: rgba(255, 255, 255, 0.45);
+  --hx-glass-text: var(--fg);
+  --hx-glass-hover-fill: var(--fg);
+  --hx-glass-hover-text: var(--bg);
+  --hx-glass-border: rgba(255, 255, 255, 0.65);
+  --hx-glass-highlight: rgba(255, 255, 255, 0.8);
+  --hx-glass-shadow: 0 8px 28px rgba(13, 20, 34, 0.14);
+  --hx-glass-blur: 14px;
+  --hx-glass-fallback: rgba(255, 255, 255, 0.92);
+
+  /* motion */
+  --dur-fast: 120ms;
+  --dur: 180ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* Tone scope: an element carrying data-tone exposes the --t-* family; recipes read --t-*. */
+:root,
+[data-tone="accent"] {
+  --t: var(--accent);
+  --t-hover: var(--accent-hover);
+  --t-subtle: var(--accent-subtle);
+  --t-fg: var(--accent-fg);
+  --t-border: var(--accent-border);
+  --t-solid-fg: var(--accent-solid-fg);
+}
+[data-tone="neutral"] {
+  --t: var(--neutral);
+  --t-hover: var(--gray-800);
+  --t-subtle: var(--neutral-subtle);
+  --t-fg: var(--neutral-fg);
+  --t-border: var(--neutral-border);
+  --t-solid-fg: var(--neutral-solid-fg);
+}
+[data-tone="info"] {
+  --t: var(--info);
+  --t-hover: var(--blue-700);
+  --t-subtle: var(--info-subtle);
+  --t-fg: var(--info-fg);
+  --t-border: var(--info-border);
+  --t-solid-fg: var(--info-solid-fg);
+}
+[data-tone="success"] {
+  --t: var(--success);
+  --t-hover: var(--green-700);
+  --t-subtle: var(--success-subtle);
+  --t-fg: var(--success-fg);
+  --t-border: var(--success-border);
+  --t-solid-fg: var(--success-solid-fg);
+}
+[data-tone="warning"] {
+  --t: var(--warning);
+  --t-hover: var(--amber-400);
+  --t-subtle: var(--warning-subtle);
+  --t-fg: var(--warning-fg);
+  --t-border: var(--warning-border);
+  --t-solid-fg: var(--warning-solid-fg);
+}
+[data-tone="danger"] {
+  --t: var(--danger);
+  --t-hover: var(--red-700);
+  --t-subtle: var(--danger-subtle);
+  --t-fg: var(--danger-fg);
+  --t-border: var(--danger-border);
+  --t-solid-fg: var(--danger-solid-fg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0.01ms;
+    --dur: 0.01ms;
+  }
+}

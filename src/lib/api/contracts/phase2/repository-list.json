@@ -1,0 +1,30 @@
+[
+  {
+    "clone_url": "https://github.com/demo-owner/prepared-python-api.git",
+    "default_branch": "main",
+    "full_name": "demo-owner/prepared-python-api",
+    "github_repository_id": "10001",
+    "html_url": "https://github.com/demo-owner/prepared-python-api",
+    "name": "prepared-python-api",
+    "owner": "demo-owner",
+    "primary_language": "Python",
+    "rejection_reason": null,
+    "size_kb": 120,
+    "supported": true,
+    "visibility": "public"
+  },
+  {
+    "clone_url": "https://github.com/demo-owner/private-api.git",
+    "default_branch": "main",
+    "full_name": "demo-owner/private-api",
+    "github_repository_id": "10002",
+    "html_url": "https://github.com/demo-owner/private-api",
+    "name": "private-api",
+    "owner": "demo-owner",
+    "primary_language": "Python",
+    "rejection_reason": "private_repository",
+    "size_kb": 120,
+    "supported": false,
+    "visibility": "private"
+  }
+]

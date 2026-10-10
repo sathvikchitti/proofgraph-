@@ -1,0 +1,30 @@
+[
+  {
+    "badge": "Evidence-backed \u00b7 Quiz pending",
+    "concept_id": "caching",
+    "score": 70,
+    "score_breakdown": {
+      "corroboration": {
+        "evidence_id": "test-evidence-demo",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 10,
+        "signals": [
+          "cache_read",
+          "cache_write",
+          "miss_fallback",
+          "ttl"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "evidence-demo",
+        "points": 55,
+        "signals": []
+      }
+    },
+    "status": "Weak"
+  }
+]

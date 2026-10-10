@@ -1,0 +1,13 @@
+{
+  "claimed_concepts": 5,
+  "claims_backed": 4,
+  "claims_required": false,
+  "claims_total": 5,
+  "honesty_score": 80,
+  "presentation_gaps": [
+    "Asynchronous Work",
+    "CI/CD"
+  ],
+  "role_readiness": 49,
+  "subtitle": "4/5 claims backed by self-authored code evidence"
+}

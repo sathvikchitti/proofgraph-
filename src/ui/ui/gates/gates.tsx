@@ -1,0 +1,2 @@
+/** RoleGate / FeatureGate — conditional rendering with fallback. Deps: react. */
+import type { ReactNode } from "react"; export interface RoleGateProps{roles:string[];role?:string;children:ReactNode;fallback?:ReactNode} export function RoleGate({roles,role,children,fallback=null}:RoleGateProps){return roles.includes(role??"")?<>{children}</>:<>{fallback}</>} export interface FeatureGateProps{enabled:boolean;children:ReactNode;fallback?:ReactNode} export function FeatureGate({enabled,children,fallback=null}:FeatureGateProps){return enabled?<>{children}</>:<>{fallback}</>}

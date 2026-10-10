@@ -1,0 +1,2 @@
+import { cva } from "class-variance-authority";
+export const contextMenuRecipe={content:cva("z-50 min-w-40 rounded-overlay bg-bg-raised p-1 text-fg shadow-float"),item:cva("flex w-full items-center gap-2 rounded-chip px-2 py-1.5 text-left text-sm outline-none hover:bg-bg-hover focus:bg-bg-hover data-[danger=true]:text-danger"),separator:cva("my-1 h-px bg-border"),label:cva("px-2 py-1 text-xs font-semibold uppercase tracking-wide text-fg-muted")};

@@ -1,0 +1,9 @@
+[
+  {
+    "event_type": "snapshot.mapped",
+    "metadata": {
+      "trigger_type": "github_poll"
+    },
+    "sequence_number": 1
+  }
+]

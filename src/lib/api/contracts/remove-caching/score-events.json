@@ -1,0 +1,704 @@
+[
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 5,
+        "signals": [
+          "domain_exception",
+          "structured_response"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "ef771b2e3ffc79146e8ffa42f6a88ae6a249023a423ea28a47d6698921b79302",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "error_handling",
+    "id": "3e5c8541-7c8e-4382-a536-4dc2e1ccd56c",
+    "new_score": 45,
+    "previous_score": 45,
+    "reason": "8 accepted evidence findings; missing signals: boundary_handler, error_logging",
+    "rules_version": "v1",
+    "scan_id": "3ad4e2e5-5de9-485e-a3aa-cf144c449cf4",
+    "timestamp": "2026-10-10T02:15:00.782633+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 10,
+        "signals": [
+          "lint_or_typecheck",
+          "test_job",
+          "workflow"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "f0721a8a80f6bcf0c0d969d23383666aff5fe3213157aab424d19c583c6bc9ef",
+        "points": 55,
+        "signals": []
+      }
+    },
+    "concept_id": "ci_cd",
+    "id": "a90ff0fb-dc1f-4888-9d6d-3707ce136904",
+    "new_score": 70,
+    "previous_score": 70,
+    "reason": "7 accepted evidence findings; missing signals: build_or_deploy_step",
+    "rules_version": "v1",
+    "scan_id": "3ad4e2e5-5de9-485e-a3aa-cf144c449cf4",
+    "timestamp": "2026-10-10T02:15:00.782633+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 5,
+        "signals": [
+          "assertion",
+          "test_case"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "f62e28b63add949481cf251a946a01ef7929437ed6e896f28c5c2bfff5d55d76",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "automated_tests",
+    "id": "7a84217d-5ca1-4431-a45c-b3e9e8951c4d",
+    "new_score": 40,
+    "previous_score": 40,
+    "reason": "16 accepted evidence findings; missing signals: fixture_or_mock, integration_boundary",
+    "rules_version": "v1",
+    "scan_id": "3ad4e2e5-5de9-485e-a3aa-cf144c449cf4",
+    "timestamp": "2026-10-10T02:15:00.782633+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      },
+      "strongest_finding": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      }
+    },
+    "concept_id": "caching",
+    "id": "a35c11ec-77cf-4895-8f03-7e4cbd6e7ed9",
+    "new_score": 0,
+    "previous_score": 70,
+    "reason": "Caching evidence stopped counting after removal: 42639fea880aefeff8891f365d3e3da428be79dfab5019bc2016cdeaa1413078, deea956ff7f06524e1ae43cb73d9e32b376fe7c0a79001d0a577b4bbfd64199b, 94b7f3bb9654a06d25f879fe881b5d4ebd8f87c6e12c0de54de773f2816f83f7, 1f1d4abf474eb6e7e69cb59057567bb2b8a7f120ac16ebadf81345cb61f40d8c, 04e195b524d09b154b465177bb78ca31d790a9072d6ec80e6965c4ce457997d3",
+    "rules_version": "v1",
+    "scan_id": "3ad4e2e5-5de9-485e-a3aa-cf144c449cf4",
+    "timestamp": "2026-10-10T02:15:00.782633+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "route_declaration"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "e57c69a17c7f347092b7058309f73df41dfbf954831084fd233aa0d6b87b198d",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "rest_apis",
+    "id": "d686ac57-1d1c-4c78-a793-d5791adc7bce",
+    "new_score": 40,
+    "previous_score": 40,
+    "reason": "4 accepted evidence findings; missing signals: request_validation, response_schema, structured_error",
+    "rules_version": "v1",
+    "scan_id": "3ad4e2e5-5de9-485e-a3aa-cf144c449cf4",
+    "timestamp": "2026-10-10T02:15:00.782633+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "async_entry"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "d7361e83d5a7893e110cf6a0343fee5dc5a9fc90624c3165fd6b8673a1889043",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "asynchronous_work",
+    "id": "3af20545-7b0d-4693-bbac-b0722c45070d",
+    "new_score": 40,
+    "previous_score": 40,
+    "reason": "5 accepted evidence findings; missing signals: background_job, queue_or_scheduler, retry_or_failure_handling",
+    "rules_version": "v1",
+    "scan_id": "3ad4e2e5-5de9-485e-a3aa-cf144c449cf4",
+    "timestamp": "2026-10-10T02:15:00.782633+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      },
+      "strongest_finding": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      }
+    },
+    "concept_id": "database_design",
+    "id": "e1beae71-2bb6-4718-9595-175d25818d07",
+    "new_score": 0,
+    "previous_score": 0,
+    "reason": "0 accepted evidence findings; missing signals: model_or_schema, query, relationship_or_constraint, transaction_or_migration",
+    "rules_version": "v1",
+    "scan_id": "3ad4e2e5-5de9-485e-a3aa-cf144c449cf4",
+    "timestamp": "2026-10-10T02:15:00.782633+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "credential_validation"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "89fe0fb8949c9401bbd0612389c2407ece0978ed7298f42aa0f63abb853b7b61",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "authentication",
+    "id": "de93fb69-02b1-41c1-baa0-1758cd5a8265",
+    "new_score": 40,
+    "previous_score": 40,
+    "reason": "1 accepted evidence findings; missing signals: protected_route, token_or_session_check, permission_decision",
+    "rules_version": "v1",
+    "scan_id": "3ad4e2e5-5de9-485e-a3aa-cf144c449cf4",
+    "timestamp": "2026-10-10T02:15:00.782633+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 10,
+        "signals": [
+          "cache_read",
+          "cache_write",
+          "invalidation",
+          "miss_fallback",
+          "ttl"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "deea956ff7f06524e1ae43cb73d9e32b376fe7c0a79001d0a577b4bbfd64199b",
+        "points": 55,
+        "signals": []
+      }
+    },
+    "concept_id": "caching",
+    "id": "773ad283-10e7-4b13-ad64-1f5adc8ad408",
+    "new_score": 70,
+    "previous_score": 0,
+    "reason": "5 accepted evidence findings; missing signals: none",
+    "rules_version": "v1",
+    "scan_id": "a0962b48-6bbe-472f-9a23-9d5a978052e7",
+    "timestamp": "2026-10-10T02:14:59.501614+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "route_declaration"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "e57c69a17c7f347092b7058309f73df41dfbf954831084fd233aa0d6b87b198d",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "rest_apis",
+    "id": "05aff2ed-9c71-4912-b6e8-61d47bc7f832",
+    "new_score": 40,
+    "previous_score": 40,
+    "reason": "4 accepted evidence findings; missing signals: request_validation, response_schema, structured_error",
+    "rules_version": "v1",
+    "scan_id": "a0962b48-6bbe-472f-9a23-9d5a978052e7",
+    "timestamp": "2026-10-10T02:14:59.501614+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "credential_validation"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "89fe0fb8949c9401bbd0612389c2407ece0978ed7298f42aa0f63abb853b7b61",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "authentication",
+    "id": "74cbffb6-1073-4b52-bde8-c776c1de891f",
+    "new_score": 40,
+    "previous_score": 40,
+    "reason": "1 accepted evidence findings; missing signals: protected_route, token_or_session_check, permission_decision",
+    "rules_version": "v1",
+    "scan_id": "a0962b48-6bbe-472f-9a23-9d5a978052e7",
+    "timestamp": "2026-10-10T02:14:59.501614+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      },
+      "strongest_finding": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      }
+    },
+    "concept_id": "database_design",
+    "id": "f4389727-9d0a-4d90-8ba7-4c8eeaa09235",
+    "new_score": 0,
+    "previous_score": 0,
+    "reason": "0 accepted evidence findings; missing signals: model_or_schema, query, relationship_or_constraint, transaction_or_migration",
+    "rules_version": "v1",
+    "scan_id": "a0962b48-6bbe-472f-9a23-9d5a978052e7",
+    "timestamp": "2026-10-10T02:14:59.501614+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "async_entry"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "d7361e83d5a7893e110cf6a0343fee5dc5a9fc90624c3165fd6b8673a1889043",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "asynchronous_work",
+    "id": "b8c93678-f622-4735-9afd-3f514ee4cce9",
+    "new_score": 40,
+    "previous_score": 40,
+    "reason": "5 accepted evidence findings; missing signals: background_job, queue_or_scheduler, retry_or_failure_handling",
+    "rules_version": "v1",
+    "scan_id": "a0962b48-6bbe-472f-9a23-9d5a978052e7",
+    "timestamp": "2026-10-10T02:14:59.501614+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 5,
+        "signals": [
+          "assertion",
+          "test_case"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "f5799e0bf35e3b0f9777f203ee1cbfb89213787b1f1ac78eef7b50eb486d7e05",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "automated_tests",
+    "id": "a6e1c371-127a-487d-863a-a8764b82831d",
+    "new_score": 40,
+    "previous_score": 40,
+    "reason": "18 accepted evidence findings; missing signals: fixture_or_mock, integration_boundary",
+    "rules_version": "v1",
+    "scan_id": "a0962b48-6bbe-472f-9a23-9d5a978052e7",
+    "timestamp": "2026-10-10T02:14:59.501614+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 10,
+        "signals": [
+          "lint_or_typecheck",
+          "test_job",
+          "workflow"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "f0721a8a80f6bcf0c0d969d23383666aff5fe3213157aab424d19c583c6bc9ef",
+        "points": 55,
+        "signals": []
+      }
+    },
+    "concept_id": "ci_cd",
+    "id": "f59ed468-7cc1-4abf-be0b-8abafecedaba",
+    "new_score": 70,
+    "previous_score": 70,
+    "reason": "7 accepted evidence findings; missing signals: build_or_deploy_step",
+    "rules_version": "v1",
+    "scan_id": "a0962b48-6bbe-472f-9a23-9d5a978052e7",
+    "timestamp": "2026-10-10T02:14:59.501614+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 5,
+        "signals": [
+          "domain_exception",
+          "structured_response"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "d6e5f85d51268fbfa65ba7d660e0331bb03daaecc25db559be7bf4fa16491bcd",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "error_handling",
+    "id": "e5c15c9b-56cb-4ac9-9a36-6ca0e5766576",
+    "new_score": 45,
+    "previous_score": 45,
+    "reason": "8 accepted evidence findings; missing signals: boundary_handler, error_logging",
+    "rules_version": "v1",
+    "scan_id": "a0962b48-6bbe-472f-9a23-9d5a978052e7",
+    "timestamp": "2026-10-10T02:14:59.501614+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "route_declaration"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "e57c69a17c7f347092b7058309f73df41dfbf954831084fd233aa0d6b87b198d",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "rest_apis",
+    "id": "fdde0c5f-2718-4968-ab19-17910b4c1251",
+    "new_score": 40,
+    "previous_score": 0,
+    "reason": "4 accepted evidence findings; missing signals: request_validation, response_schema, structured_error",
+    "rules_version": "v1",
+    "scan_id": "63ff8c68-2080-4ebe-ae81-160c5ec3cacb",
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 5,
+        "signals": [
+          "domain_exception",
+          "structured_response"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "ef771b2e3ffc79146e8ffa42f6a88ae6a249023a423ea28a47d6698921b79302",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "error_handling",
+    "id": "5fffe09c-ad9e-42cb-9dda-b81435dd45bb",
+    "new_score": 45,
+    "previous_score": 0,
+    "reason": "8 accepted evidence findings; missing signals: boundary_handler, error_logging",
+    "rules_version": "v1",
+    "scan_id": "63ff8c68-2080-4ebe-ae81-160c5ec3cacb",
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 10,
+        "signals": [
+          "lint_or_typecheck",
+          "test_job",
+          "workflow"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "f0721a8a80f6bcf0c0d969d23383666aff5fe3213157aab424d19c583c6bc9ef",
+        "points": 55,
+        "signals": []
+      }
+    },
+    "concept_id": "ci_cd",
+    "id": "dcb52353-ee08-4bde-a30b-aed8b82d0c94",
+    "new_score": 70,
+    "previous_score": 0,
+    "reason": "7 accepted evidence findings; missing signals: build_or_deploy_step",
+    "rules_version": "v1",
+    "scan_id": "63ff8c68-2080-4ebe-ae81-160c5ec3cacb",
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 5,
+        "signals": [
+          "assertion",
+          "test_case"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "f62e28b63add949481cf251a946a01ef7929437ed6e896f28c5c2bfff5d55d76",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "automated_tests",
+    "id": "c50b8229-61bc-431d-ab15-f31d5d253204",
+    "new_score": 40,
+    "previous_score": 0,
+    "reason": "16 accepted evidence findings; missing signals: fixture_or_mock, integration_boundary",
+    "rules_version": "v1",
+    "scan_id": "63ff8c68-2080-4ebe-ae81-160c5ec3cacb",
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      },
+      "strongest_finding": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      }
+    },
+    "concept_id": "caching",
+    "id": "29e37cd3-9de7-424c-ad26-3bd77c2a5b1c",
+    "new_score": 0,
+    "previous_score": 0,
+    "reason": "0 accepted evidence findings; missing signals: cache_read, cache_write, miss_fallback, invalidation, ttl",
+    "rules_version": "v1",
+    "scan_id": "63ff8c68-2080-4ebe-ae81-160c5ec3cacb",
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "async_entry"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "d7361e83d5a7893e110cf6a0343fee5dc5a9fc90624c3165fd6b8673a1889043",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "asynchronous_work",
+    "id": "3b9aac56-ae5c-45cc-ac6e-a19c2c7eda7c",
+    "new_score": 40,
+    "previous_score": 0,
+    "reason": "5 accepted evidence findings; missing signals: background_job, queue_or_scheduler, retry_or_failure_handling",
+    "rules_version": "v1",
+    "scan_id": "63ff8c68-2080-4ebe-ae81-160c5ec3cacb",
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 0,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      },
+      "strongest_finding": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": []
+      }
+    },
+    "concept_id": "database_design",
+    "id": "15d032a2-cd50-4b72-ab0b-e96a0d5da9a4",
+    "new_score": 0,
+    "previous_score": 0,
+    "reason": "0 accepted evidence findings; missing signals: model_or_schema, query, relationship_or_constraint, transaction_or_migration",
+    "rules_version": "v1",
+    "scan_id": "63ff8c68-2080-4ebe-ae81-160c5ec3cacb",
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "breakdown": {
+      "corroboration": {
+        "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+        "points": 5,
+        "signals": []
+      },
+      "diversity_bonus": {
+        "evidence_id": null,
+        "points": 0,
+        "signals": [
+          "credential_validation"
+        ]
+      },
+      "strongest_finding": {
+        "evidence_id": "89fe0fb8949c9401bbd0612389c2407ece0978ed7298f42aa0f63abb853b7b61",
+        "points": 35,
+        "signals": []
+      }
+    },
+    "concept_id": "authentication",
+    "id": "946050de-d3b5-4d5c-893a-56bc4f6f787a",
+    "new_score": 40,
+    "previous_score": 0,
+    "reason": "1 accepted evidence findings; missing signals: protected_route, token_or_session_check, permission_decision",
+    "rules_version": "v1",
+    "scan_id": "63ff8c68-2080-4ebe-ae81-160c5ec3cacb",
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  }
+]

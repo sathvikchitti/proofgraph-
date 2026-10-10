@@ -1,0 +1,2 @@
+import { cva } from "class-variance-authority";
+export const paginationRecipe={root:cva("flex flex-wrap items-center justify-between gap-3"),controls:cva("flex items-center gap-1"),button:cva("inline-flex h-8 min-w-8 items-center justify-center rounded-chip border border-border bg-bg-raised px-2 text-sm text-fg hover:bg-bg-hover focus-ring disabled:pointer-events-none disabled:opacity-50 data-[active=true]:border-(color:--accent) data-[active=true]:bg-accent-subtle"),summary:cva("text-sm text-fg-muted")};

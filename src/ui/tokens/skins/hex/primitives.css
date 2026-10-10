@@ -1,0 +1,61 @@
+/* Hex skin, tier 1: raw palette, taken from hex-ui (--hx-p-*) plus a few extrapolated hues marked "ext".
+   Only a brand change edits this file. Components never read these. */
+:root {
+  /* ink: violet-black ramp */
+  --hx-p-ink-950: #01011b;
+  --hx-p-ink-900: #14111f;
+  --hx-p-ink-800: #231e2f;
+  --hx-p-ink-700: #31263b;
+  --hx-p-ink-600: #43394c;
+  --hx-p-ink-500: #5d5566;
+  --hx-p-ink-400: #717a94;
+  --hx-p-ink-300: #89828d;
+  --hx-p-ink-200: #b9b3bd;
+
+  /* paper: warm off-white ramp */
+  --hx-p-paper-0: #ffffff;
+  --hx-p-paper-50: #fffcfc;
+  --hx-p-paper-100: #faf8f7;
+  --hx-p-paper-200: #f5f2f0;
+  --hx-p-paper-300: #efebe9;
+  --hx-p-paper-400: #e6e1e0;
+  --hx-p-paper-500: #dbd7da;
+  --hx-p-paper-muted: #f6f5f7;
+  --hx-p-paper-hover: #f3f1f4;
+
+  /* violet: brand accent */
+  --hx-p-violet-50: #f3f1fc;
+  --hx-p-violet-100: #ebe8f9;
+  --hx-p-violet-200: #d9d4f2;
+  --hx-p-violet-300: #b8aee6;
+  --hx-p-violet-400: #9e91d6;
+  --hx-p-violet-500: #7262b8;
+  --hx-p-violet-600: #5b4fb0;
+  --hx-p-violet-700: #473982;
+  --hx-p-violet-800: #2d2552;
+
+  /* blush: primary CTA fill and icon badge */
+  --hx-p-blush-100: #fbecee;
+  --hx-p-blush-200: #f6dde1;
+  --hx-p-blush-400: #e0a7b1;
+  --hx-p-blush-600: #c56b7c;
+  --hx-p-blush-900: #3a2129;
+
+  /* data and status */
+  --hx-p-blue-500: #6f8fd3;
+  --hx-p-blue-600: #1d5fb8;
+  --hx-p-blue-400: #8fb8f2;
+  --hx-p-green-600: #22863a;
+  --hx-p-green-400: #4cbf6b;
+  --hx-p-teal-600: #1f8f84;
+  --hx-p-teal-400: #4fc3b5;
+  --hx-p-codeblue-600: #005cc5;
+  --hx-p-codeblue-400: #79b8ff;
+  --hx-p-red-600: #c2410c;
+  --hx-p-red-400: #f08a65;
+  --hx-p-orange-500: #d97757;
+  --hx-p-amber-600: #a86a06; /* ext: hex-ui has no amber; warning needs one */
+  --hx-p-amber-400: #e0a84a; /* ext */
+  --hx-p-viridis-5: #28ae80;
+
+}

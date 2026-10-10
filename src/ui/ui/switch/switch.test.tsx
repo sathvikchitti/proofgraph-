@@ -1,0 +1,2 @@
+import {screen} from "@testing-library/react"; import userEvent from "@testing-library/user-event"; import {renderUI} from "../../test/utils"; import {Switch} from "./switch";
+describe("Switch",()=>{it("toggles",async()=>{const onChange=vi.fn();renderUI(<Switch label="Notifications" onCheckedChange={onChange}/>);await userEvent.click(screen.getByRole("switch",{name:"Notifications"}));expect(onChange).toHaveBeenCalledWith(true)})});

@@ -1,0 +1,1 @@
+import { cva } from "class-variance-authority"; export const profileCardRecipe={root:cva("rounded-card border border-border bg-bg-raised p-4"),header:cva("flex items-center gap-3"),title:cva("text-base font-semibold"),meta:cva("text-sm text-fg-muted"),body:cva("mt-3 text-sm text-fg"),qr:cva("mt-3 grid place-items-center rounded-card bg-bg-subtle p-3")};

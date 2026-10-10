@@ -1,0 +1,4 @@
+"use client";
+/** Markdown — safe token-styled GFM rendering. Deps: react, react-markdown, remark-gfm, lib/cn, lib/skin. */
+import type { Components } from "react-markdown"; import ReactMarkdown from "react-markdown"; import remarkGfm from "remark-gfm"; import { cn } from "../../lib/cn"; import { useRecipe } from "../../lib/skin"; import type { ClassNames,StyleProps } from "../../lib/types"; import { markdownRecipe } from "./markdown.recipe";
+export interface MarkdownProps extends StyleProps{children:string;components?:Components;classNames?:ClassNames<"root">} export function Markdown({children,components,className,classNames}:MarkdownProps){const r=useRecipe("markdown",markdownRecipe);return <div className={cn(r.root(),className,classNames?.root)}><ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>{children}</ReactMarkdown></div>}

@@ -1,0 +1,12 @@
+/* Compact density: remaps control and layout metrics (semantic tier). */
+[data-density="compact"] {
+  --control-height-sm: 24px;
+  --control-height-md: 32px;
+  --control-height-lg: 40px;
+  --control-px-sm: 8px;
+  --control-px-md: 10px;
+  --control-px-lg: 14px;
+  --row-height: 36px;
+  --pad-card: 12px;
+  --gap-stack: 12px;
+}

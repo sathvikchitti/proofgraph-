@@ -1,0 +1,19 @@
+{
+  "blob_sha": "7aaf5686a9af6315f848a3305e6a8262998fa926",
+  "evidence_id": "d799b0748f6f20da823c7136a44a5eae41bff5cd2ecb19da5734ea5ba82ca91b",
+  "file_path": "app/errors/foreign_handlers.py",
+  "line_end": 2,
+  "line_start": 2,
+  "lines": [
+    {
+      "is_evidence": false,
+      "number": 1,
+      "text": "def foreign_failure() -> None:"
+    },
+    {
+      "is_evidence": true,
+      "number": 2,
+      "text": "    raise RuntimeError('external handler failure')"
+    }
+  ]
+}

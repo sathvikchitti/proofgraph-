@@ -1,0 +1,79 @@
+{
+  "blob_sha": "6b81372bdb7588bc19a61ab69e18de30cb7bed85",
+  "evidence_id": "0ed865543a1f164981ba269e50b1454b94642ee14aa6dbcac66f37e01cb9230d",
+  "file_path": "app/routers/products.py",
+  "line_end": 17,
+  "line_start": 7,
+  "lines": [
+    {
+      "is_evidence": false,
+      "number": 4,
+      "text": "cache = redis.Redis.from_url('redis://localhost:6379/0')"
+    },
+    {
+      "is_evidence": false,
+      "number": 5,
+      "text": "CACHE_TTL_SECONDS = 60"
+    },
+    {
+      "is_evidence": false,
+      "number": 6,
+      "text": "@router.get('/{product_id}')"
+    },
+    {
+      "is_evidence": true,
+      "number": 7,
+      "text": "async def get_product(product_id: int, refresh: bool = False) -> dict[str, int]:"
+    },
+    {
+      "is_evidence": true,
+      "number": 8,
+      "text": "    key = f'product:{product_id}'"
+    },
+    {
+      "is_evidence": true,
+      "number": 9,
+      "text": "    if refresh:"
+    },
+    {
+      "is_evidence": true,
+      "number": 10,
+      "text": "        cache.delete(key)"
+    },
+    {
+      "is_evidence": true,
+      "number": 11,
+      "text": "    cached = cache.get(key)"
+    },
+    {
+      "is_evidence": true,
+      "number": 12,
+      "text": "    if cached is None:"
+    },
+    {
+      "is_evidence": true,
+      "number": 13,
+      "text": "        if product_id < 1:"
+    },
+    {
+      "is_evidence": true,
+      "number": 14,
+      "text": "            raise HTTPException(404, detail='product missing')"
+    },
+    {
+      "is_evidence": true,
+      "number": 15,
+      "text": "        cached = {'id': product_id}"
+    },
+    {
+      "is_evidence": true,
+      "number": 16,
+      "text": "        cache.set(key, cached, ex=CACHE_TTL_SECONDS)"
+    },
+    {
+      "is_evidence": true,
+      "number": 17,
+      "text": "    return cached"
+    }
+  ]
+}

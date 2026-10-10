@@ -1,0 +1,59 @@
+[
+  {
+    "completed_at": "2026-10-10T02:15:01.243231Z",
+    "created_at": "2026-10-10T02:15:00.521525Z",
+    "id": "3ad4e2e5-5de9-485e-a3aa-cf144c449cf4",
+    "metrics": {
+      "blobs_analysed": 0,
+      "blobs_skipped": 4,
+      "detector_cache_hits": 45,
+      "eligible_files": 45,
+      "evidence_accepted": 41,
+      "evidence_rejected": 1,
+      "total_duration_ms": 470,
+      "total_tracked_files": 49
+    },
+    "snapshot_id": "2fe432ad-482f-45cf-b76b-078544fb3f1f",
+    "started_at": "2026-10-10T02:15:00.776979Z",
+    "status": "completed",
+    "trigger_type": "manual"
+  },
+  {
+    "completed_at": "2026-10-10T02:15:00.147882Z",
+    "created_at": "2026-10-10T02:14:58.615229Z",
+    "id": "a0962b48-6bbe-472f-9a23-9d5a978052e7",
+    "metrics": {
+      "blobs_analysed": 2,
+      "blobs_skipped": 4,
+      "detector_cache_hits": 43,
+      "eligible_files": 45,
+      "evidence_accepted": 48,
+      "evidence_rejected": 1,
+      "total_duration_ms": 659,
+      "total_tracked_files": 49
+    },
+    "snapshot_id": "02268f2c-c6ce-4e0f-88bf-72e1e50defc4",
+    "started_at": "2026-10-10T02:14:59.493539Z",
+    "status": "completed",
+    "trigger_type": "manual"
+  },
+  {
+    "completed_at": "2026-10-10T02:14:57.983768Z",
+    "created_at": "2026-10-10T02:14:36.757106Z",
+    "id": "63ff8c68-2080-4ebe-ae81-160c5ec3cacb",
+    "metrics": {
+      "blobs_analysed": 40,
+      "blobs_skipped": 4,
+      "detector_cache_hits": 5,
+      "eligible_files": 45,
+      "evidence_accepted": 41,
+      "evidence_rejected": 1,
+      "total_duration_ms": 654,
+      "total_tracked_files": 49
+    },
+    "snapshot_id": "1813cd40-8f0d-43b1-84f3-08f6e2f7c262",
+    "started_at": "2026-10-10T02:14:57.333532Z",
+    "status": "completed",
+    "trigger_type": "manual"
+  }
+]

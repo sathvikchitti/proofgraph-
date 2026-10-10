@@ -1,0 +1,2 @@
+import {screen} from "@testing-library/react"; import {renderUI} from "../../test/utils"; import {FormActions,FormSection} from "./form-layout";
+describe("Form layout",()=>{it("groups fields and actions",()=>{renderUI(<FormSection title="Profile" description="Public details"><input aria-label="Name"/><FormActions><button>Save</button></FormActions></FormSection>);expect(screen.getByText("Profile")).toBeInTheDocument();expect(screen.getByRole("button",{name:"Save"})).toBeInTheDocument()})});

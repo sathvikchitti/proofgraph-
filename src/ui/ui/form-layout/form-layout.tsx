@@ -1,0 +1,7 @@
+"use client";
+/** FormSection / FormActions — form grouping and optional sticky action bar. Deps: react, lib/cn, lib/skin. */
+import type { ReactNode } from "react"; import { cn } from "../../lib/cn"; import { useRecipe } from "../../lib/skin"; import type { ClassNames,StyleProps } from "../../lib/types"; import { formLayoutRecipe } from "./form-layout.recipe";
+export interface FormSectionProps extends StyleProps{title?:ReactNode;description?:ReactNode;variant?:"plain"|"divided";children:ReactNode;classNames?:ClassNames<"header"|"title"|"description"|"content">}
+export function FormSection({title,description,variant="plain",children,className,classNames}:FormSectionProps){const r=useRecipe("formLayout",formLayoutRecipe);return <fieldset className={cn(r.section({variant}),className)}>{title||description?<div className={cn(r.header(),classNames?.header)}>{title?<legend className={cn(r.title(),classNames?.title)}>{title}</legend>:null}{description?<p className={cn(r.description(),classNames?.description)}>{description}</p>:null}</div>:null}<div className={cn(r.content(),classNames?.content)}>{children}</div></fieldset>}
+export interface FormActionsProps extends StyleProps{sticky?:boolean;align?:"start"|"between"|"end";children:ReactNode;classNames?:ClassNames<"root">}
+export function FormActions({sticky=false,align="end",children,className,classNames}:FormActionsProps){const r=useRecipe("formLayout",formLayoutRecipe);return <div className={cn(r.actions({sticky,align}),className,classNames?.root)}>{children}</div>}

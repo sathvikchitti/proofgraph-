@@ -1,0 +1,1053 @@
+[
+  {
+    "actor": "Repo Cartographer",
+    "display_detail": "Mapped 49 tracked files at commit cef7b47b5f4c.",
+    "display_title": "Repository snapshot mapped",
+    "event_type": "snapshot.mapped",
+    "metadata": {
+      "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+      "total_tracked_files": 49,
+      "trigger_type": "manual"
+    },
+    "sequence_number": 1,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Code Auditor",
+    "display_detail": "Reused 5 cached analyses and inspected 40 changed blobs.",
+    "display_title": "Structural analysis completed",
+    "event_type": "analysis.completed",
+    "metadata": {
+      "blobs_analysed": 40,
+      "blobs_skipped": 4,
+      "detector_cache_hits": 5,
+      "eligible_files": 45,
+      "evidence_accepted": 0,
+      "evidence_rejected": 0,
+      "total_tracked_files": 49
+    },
+    "sequence_number": 2,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of .github/workflows/ci.yml:2-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "ci_cd",
+      "evidence_id": "0d83201b89f9bc7f225728d6b2dcff63e7ed0fdfe645e5536a4d44327be75157",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "dfb9172149224f0639b0677938fed96748d86fdd",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": ".github/workflows/ci.yml",
+        "line_end": 2,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 3,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of .github/workflows/ci.yml:4-4 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "ci_cd",
+      "evidence_id": "240ef4d7ea5239a3eb8ca6b9d877fd188706412b801ce02a8503ebdf7386b920",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "dfb9172149224f0639b0677938fed96748d86fdd",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": ".github/workflows/ci.yml",
+        "line_end": 4,
+        "line_start": 4
+      }
+    },
+    "sequence_number": 4,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of .github/workflows/ci.yml:5-5 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "ci_cd",
+      "evidence_id": "59c01f7288a1775319115559a33e5a8e68336ed2762444711ec88ec087c086d1",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "dfb9172149224f0639b0677938fed96748d86fdd",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": ".github/workflows/ci.yml",
+        "line_end": 5,
+        "line_start": 5
+      }
+    },
+    "sequence_number": 5,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of .github/workflows/ci.yml:5-5 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "ci_cd",
+      "evidence_id": "22a697304fb8d5db0304423ac17138504cd3ef31413537a857f8baedde1e0d16",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "dfb9172149224f0639b0677938fed96748d86fdd",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": ".github/workflows/ci.yml",
+        "line_end": 5,
+        "line_start": 5
+      }
+    },
+    "sequence_number": 6,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of .github/workflows/ci.yml:7-7 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "ci_cd",
+      "evidence_id": "ab3248f75f750a13d7804f67daff264a8e132a5d98092ce87a06fa6d8fd3a8ec",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "dfb9172149224f0639b0677938fed96748d86fdd",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": ".github/workflows/ci.yml",
+        "line_end": 7,
+        "line_start": 7
+      }
+    },
+    "sequence_number": 7,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of .github/workflows/ci.yml:8-8 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "ci_cd",
+      "evidence_id": "f0721a8a80f6bcf0c0d969d23383666aff5fe3213157aab424d19c583c6bc9ef",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "dfb9172149224f0639b0677938fed96748d86fdd",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": ".github/workflows/ci.yml",
+        "line_end": 8,
+        "line_start": 8
+      }
+    },
+    "sequence_number": 8,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of .github/workflows/ci.yml:9-9 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "ci_cd",
+      "evidence_id": "b22d2ae668e2054f5019d052b3765f5a35908d836065b92b34da35144d7e7f33",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "dfb9172149224f0639b0677938fed96748d86fdd",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": ".github/workflows/ci.yml",
+        "line_end": 9,
+        "line_start": 9
+      }
+    },
+    "sequence_number": 9,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 0% of app/errors/foreign_handlers.py:2-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "error_handling",
+      "evidence_id": "d799b0748f6f20da823c7136a44a5eae41bff5cd2ecb19da5734ea5ba82ca91b",
+      "ownership_ratio": 0,
+      "reason": "foreign_author",
+      "source": {
+        "blob_sha": "7aaf5686a9af6315f848a3305e6a8262998fa926",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/errors/foreign_handlers.py",
+        "line_end": 2,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 10,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/errors/handlers.py:3-3 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "error_handling",
+      "evidence_id": "c2f7bba76f0a6ad4cbb2ecf655c07e954d358747c0eef5fe9b67dc7783c586f1",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "0bbb70410598e3cdf29022a55a94ef403747d95a",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/errors/handlers.py",
+        "line_end": 3,
+        "line_start": 3
+      }
+    },
+    "sequence_number": 11,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/errors/handlers.py:3-3 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "error_handling",
+      "evidence_id": "c3583c52ef33af4fd8b35ed8f969bb7b47a13c00fb9750aa525e78f6152441ee",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "0bbb70410598e3cdf29022a55a94ef403747d95a",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/errors/handlers.py",
+        "line_end": 3,
+        "line_start": 3
+      }
+    },
+    "sequence_number": 12,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/auth.py:6-9 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "rest_apis",
+      "evidence_id": "e57c69a17c7f347092b7058309f73df41dfbf954831084fd233aa0d6b87b198d",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "d974b6683dc182e5c1985f182eaed5b666d159ff",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/auth.py",
+        "line_end": 9,
+        "line_start": 6
+      }
+    },
+    "sequence_number": 13,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/auth.py:6-9 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "asynchronous_work",
+      "evidence_id": "d7361e83d5a7893e110cf6a0343fee5dc5a9fc90624c3165fd6b8673a1889043",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "d974b6683dc182e5c1985f182eaed5b666d159ff",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/auth.py",
+        "line_end": 9,
+        "line_start": 6
+      }
+    },
+    "sequence_number": 14,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/auth.py:7-7 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "authentication",
+      "evidence_id": "89fe0fb8949c9401bbd0612389c2407ece0978ed7298f42aa0f63abb853b7b61",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "d974b6683dc182e5c1985f182eaed5b666d159ff",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/auth.py",
+        "line_end": 7,
+        "line_start": 7
+      }
+    },
+    "sequence_number": 15,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/auth.py:8-8 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "error_handling",
+      "evidence_id": "8c9591f4152563e48c553bafdde673af2b6551455ae9edd1481416ca4ce5adb5",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "d974b6683dc182e5c1985f182eaed5b666d159ff",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/auth.py",
+        "line_end": 8,
+        "line_start": 8
+      }
+    },
+    "sequence_number": 16,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/auth.py:8-8 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "error_handling",
+      "evidence_id": "1d58fa3375014783481d23c6e11c5ec0dbc60ade0f52fd081ad17e919a71dd89",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "d974b6683dc182e5c1985f182eaed5b666d159ff",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/auth.py",
+        "line_end": 8,
+        "line_start": 8
+      }
+    },
+    "sequence_number": 17,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/orders.py:4-5 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "rest_apis",
+      "evidence_id": "a49ddf60dc9665da60d947fc37d3059746a41ad52dba03cdb85cd9d19e898904",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "8b342e26b08ff34175c2a6085a43d3a252330109",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/orders.py",
+        "line_end": 5,
+        "line_start": 4
+      }
+    },
+    "sequence_number": 18,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/orders.py:4-5 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "asynchronous_work",
+      "evidence_id": "adead93e6bb4d2aa95569f7e1cc0d88576c4259b6d6a2488a9f59c60254e2f78",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "8b342e26b08ff34175c2a6085a43d3a252330109",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/orders.py",
+        "line_end": 5,
+        "line_start": 4
+      }
+    },
+    "sequence_number": 19,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/products.py:4-7 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "rest_apis",
+      "evidence_id": "b9905c40179c3f7f0a92526a542b663a5d480478519d03ca0dad6a123c546acd",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "bb9e79ed9b880996bee6b229b94991383947c1ba",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/products.py",
+        "line_end": 7,
+        "line_start": 4
+      }
+    },
+    "sequence_number": 20,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/products.py:4-7 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "asynchronous_work",
+      "evidence_id": "b47c491edfd6857f77e486754edbb7a70d04ea7e5b49cc7abc29daf70bb19d09",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "bb9e79ed9b880996bee6b229b94991383947c1ba",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/products.py",
+        "line_end": 7,
+        "line_start": 4
+      }
+    },
+    "sequence_number": 21,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/products.py:6-6 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "error_handling",
+      "evidence_id": "ef771b2e3ffc79146e8ffa42f6a88ae6a249023a423ea28a47d6698921b79302",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "bb9e79ed9b880996bee6b229b94991383947c1ba",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/products.py",
+        "line_end": 6,
+        "line_start": 6
+      }
+    },
+    "sequence_number": 22,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/products.py:6-6 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "error_handling",
+      "evidence_id": "bc08f508ae971550aa1c49ac1372cf53f8e373a988bba324ea4132b83fe36dd9",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "bb9e79ed9b880996bee6b229b94991383947c1ba",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/products.py",
+        "line_end": 6,
+        "line_start": 6
+      }
+    },
+    "sequence_number": 23,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/users.py:4-7 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "rest_apis",
+      "evidence_id": "3e7cab8c5e23d909c610d33f3320bed9425945f9cb2b6daabe571fd35dc03fa4",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "5387ff65738ccc99ced76a56b7ec9198b09c13bb",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/users.py",
+        "line_end": 7,
+        "line_start": 4
+      }
+    },
+    "sequence_number": 24,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/users.py:4-7 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "asynchronous_work",
+      "evidence_id": "3e01bcb909a0f456ece3e931572459f280ddcd71b609a3096492f6983777ada3",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "5387ff65738ccc99ced76a56b7ec9198b09c13bb",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/users.py",
+        "line_end": 7,
+        "line_start": 4
+      }
+    },
+    "sequence_number": 25,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/users.py:6-6 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "error_handling",
+      "evidence_id": "ac24109d40315ed3f97046004603b3ab718608a6a6319d2be244f3a2bcb66bdf",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "5387ff65738ccc99ced76a56b7ec9198b09c13bb",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/users.py",
+        "line_end": 6,
+        "line_start": 6
+      }
+    },
+    "sequence_number": 26,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/routers/users.py:6-6 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "error_handling",
+      "evidence_id": "d6e5f85d51268fbfa65ba7d660e0331bb03daaecc25db559be7bf4fa16491bcd",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "5387ff65738ccc99ced76a56b7ec9198b09c13bb",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/routers/users.py",
+        "line_end": 6,
+        "line_start": 6
+      }
+    },
+    "sequence_number": 27,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of app/tasks/notifications.py:2-3 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "asynchronous_work",
+      "evidence_id": "0b3eeb3576afa05a42b2cf347594df35ebc447aaf02efabd0e92f70de5273dca",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "c929cc7255cc1d9cdc0d1b9db2406c2af10ea4d9",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "app/tasks/notifications.py",
+        "line_end": 3,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 28,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/conftest.py:3-4 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "b39ed5f374715a0be974318e01b15e5e2718fecb0058c19d9822eb5c073f2c21",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "a1e26e765013da7a3360f69ba1cd24aa9850e0b5",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/conftest.py",
+        "line_end": 4,
+        "line_start": 3
+      }
+    },
+    "sequence_number": 29,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_auth.py:1-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "33957b3949cba2b1d517696545a6c2f647fd1ce6822580460181a09a302d9a93",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "1eae7a80cfe32f75ccf1fb71bb81fd77813f505f",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_auth.py",
+        "line_end": 2,
+        "line_start": 1
+      }
+    },
+    "sequence_number": 30,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_auth.py:2-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "087850fea76db7897f6ec1f51955620ba2476e5abcda99fcc9b7c11929b70c66",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "1eae7a80cfe32f75ccf1fb71bb81fd77813f505f",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_auth.py",
+        "line_end": 2,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 31,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_background_tasks.py:1-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "29be0382e3d85a54bc0c08fc3525eedbb10a50017fcffb3a906497f54e93ecd7",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "8194fc93c2d8ec11438fe55d5b03326a55f69a93",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_background_tasks.py",
+        "line_end": 2,
+        "line_start": 1
+      }
+    },
+    "sequence_number": 32,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_background_tasks.py:2-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "b96871ce7bd8b1a6a10de59340bba3e3c6bf3dfdf32b8a33598e07b181357a36",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "8194fc93c2d8ec11438fe55d5b03326a55f69a93",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_background_tasks.py",
+        "line_end": 2,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 33,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_error_handlers.py:2-4 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "c5487e6670705fc838f13f9db58b28933ca9ace4af14ee240017fdb2c1d3841c",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "ad66af26bd5dc2ab27bcac037b4fe8c5fb773a25",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_error_handlers.py",
+        "line_end": 4,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 34,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_orders.py:1-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "230fbb22894ae451ae8f799785e09841e41c0ba2b3dcbcaa68312dd67a191b60",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "156bd4fa21a76510652d1466ae8821b554a1fd6d",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_orders.py",
+        "line_end": 2,
+        "line_start": 1
+      }
+    },
+    "sequence_number": 35,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_orders.py:2-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "5bd2c59d5a5730a9fbba49b4718d58f0ae924947783d630872257f83fce35a41",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "156bd4fa21a76510652d1466ae8821b554a1fd6d",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_orders.py",
+        "line_end": 2,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 36,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_permissions.py:1-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "e9f9aeb058e794c121ebd0c0d2a3aa493362fd3f9f8cce77715eedfb61a01b37",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "3f35f8eca45c0de6815dbbd37988cb9b1a074fce",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_permissions.py",
+        "line_end": 2,
+        "line_start": 1
+      }
+    },
+    "sequence_number": 37,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_permissions.py:2-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "66b2ad6e11a7e1a952f8edbf95d3c831b6cfdb545bfc4580a1bfe9a1cedd6a4d",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "3f35f8eca45c0de6815dbbd37988cb9b1a074fce",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_permissions.py",
+        "line_end": 2,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 38,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_products.py:1-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "61bbd08ed65ecd79a2f0657cca462152dcfe482a107c4be265299d318e90f5e3",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "d7767e6b07a76b7ee45a04d970ca10f872aab8ea",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_products.py",
+        "line_end": 2,
+        "line_start": 1
+      }
+    },
+    "sequence_number": 39,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_products.py:2-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "f62e28b63add949481cf251a946a01ef7929437ed6e896f28c5c2bfff5d55d76",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "d7767e6b07a76b7ee45a04d970ca10f872aab8ea",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_products.py",
+        "line_end": 2,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 40,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_repositories.py:1-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "f5799e0bf35e3b0f9777f203ee1cbfb89213787b1f1ac78eef7b50eb486d7e05",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "bc8e2fa5166c4027d67614f585bba4cfd8cbe36b",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_repositories.py",
+        "line_end": 2,
+        "line_start": 1
+      }
+    },
+    "sequence_number": 41,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_repositories.py:2-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "2274773ed8af39bcfff36240f064ee152c77597a4e6c83356759a4c008032ebc",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "bc8e2fa5166c4027d67614f585bba4cfd8cbe36b",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_repositories.py",
+        "line_end": 2,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 42,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_users.py:1-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "f3dea07e8fb50303d00fed1ac11eccb55de5bc031a5f359cb7845c7f2a873428",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "0c9ba00dfeca9e6bf36457677be8be5421db23d6",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_users.py",
+        "line_end": 2,
+        "line_start": 1
+      }
+    },
+    "sequence_number": 43,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Authorship Agent",
+    "display_detail": "Attributed 100% of tests/test_users.py:2-2 to the student.",
+    "display_title": "Evidence authorship checked",
+    "event_type": "authorship.checked",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "evidence_id": "0993ef925dbf8a92b6205db9f1532a019ddb0de10a733bdc4ee56ea5ef67680b",
+      "ownership_ratio": 100,
+      "reason": null,
+      "source": {
+        "blob_sha": "0c9ba00dfeca9e6bf36457677be8be5421db23d6",
+        "commit_sha": "cef7b47b5f4c3baedea275a1066f6aa5f53892d7",
+        "file_path": "tests/test_users.py",
+        "line_end": 2,
+        "line_start": 2
+      }
+    },
+    "sequence_number": 44,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Evidence Verifier",
+    "display_detail": "Accepted 41 findings; rejected 1 foreign-authored findings.",
+    "display_title": "Evidence validation completed",
+    "event_type": "evidence.accepted",
+    "metadata": {
+      "blobs_analysed": 40,
+      "blobs_skipped": 4,
+      "detector_cache_hits": 5,
+      "eligible_files": 45,
+      "evidence_accepted": 41,
+      "evidence_rejected": 1,
+      "total_tracked_files": 49
+    },
+    "sequence_number": 45,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Score Engine",
+    "display_detail": "REST APIs moved from 0 to 40.",
+    "display_title": "Concept score updated",
+    "event_type": "score.changed",
+    "metadata": {
+      "concept_id": "rest_apis",
+      "missing_signals": [
+        "request_validation",
+        "response_schema",
+        "structured_error"
+      ],
+      "new_score": 40,
+      "previous_score": 0
+    },
+    "sequence_number": 46,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Score Engine",
+    "display_detail": "Authentication moved from 0 to 40.",
+    "display_title": "Concept score updated",
+    "event_type": "score.changed",
+    "metadata": {
+      "concept_id": "authentication",
+      "missing_signals": [
+        "protected_route",
+        "token_or_session_check",
+        "permission_decision"
+      ],
+      "new_score": 40,
+      "previous_score": 0
+    },
+    "sequence_number": 47,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Score Engine",
+    "display_detail": "Asynchronous Work moved from 0 to 40.",
+    "display_title": "Concept score updated",
+    "event_type": "score.changed",
+    "metadata": {
+      "concept_id": "asynchronous_work",
+      "missing_signals": [
+        "background_job",
+        "queue_or_scheduler",
+        "retry_or_failure_handling"
+      ],
+      "new_score": 40,
+      "previous_score": 0
+    },
+    "sequence_number": 48,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Score Engine",
+    "display_detail": "Automated Tests moved from 0 to 40.",
+    "display_title": "Concept score updated",
+    "event_type": "score.changed",
+    "metadata": {
+      "concept_id": "automated_tests",
+      "missing_signals": [
+        "fixture_or_mock",
+        "integration_boundary"
+      ],
+      "new_score": 40,
+      "previous_score": 0
+    },
+    "sequence_number": 49,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Score Engine",
+    "display_detail": "CI/CD moved from 0 to 70.",
+    "display_title": "Concept score updated",
+    "event_type": "score.changed",
+    "metadata": {
+      "concept_id": "ci_cd",
+      "missing_signals": [
+        "build_or_deploy_step"
+      ],
+      "new_score": 70,
+      "previous_score": 0
+    },
+    "sequence_number": 50,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "Score Engine",
+    "display_detail": "Error Handling moved from 0 to 45.",
+    "display_title": "Concept score updated",
+    "event_type": "score.changed",
+    "metadata": {
+      "concept_id": "error_handling",
+      "missing_signals": [
+        "boundary_handler",
+        "error_logging"
+      ],
+      "new_score": 45,
+      "previous_score": 0
+    },
+    "sequence_number": 51,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  },
+  {
+    "actor": "ProofGraph Builder",
+    "display_detail": "Added 41 evidence edges to the latest snapshot.",
+    "display_title": "ProofGraph projection updated",
+    "event_type": "proofgraph.projected",
+    "metadata": {
+      "blobs_analysed": 40,
+      "blobs_skipped": 4,
+      "detector_cache_hits": 5,
+      "eligible_files": 45,
+      "evidence_accepted": 41,
+      "evidence_rejected": 1,
+      "total_duration_ms": 654,
+      "total_tracked_files": 49
+    },
+    "sequence_number": 52,
+    "timestamp": "2026-10-10T02:14:57.341316+00:00"
+  }
+]

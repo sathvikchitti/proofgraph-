@@ -1,0 +1,209 @@
+/* Dark theme: remaps the semantic tier only. Same declarations under the OS preference and the explicit attribute. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --bg: var(--gray-950);
+    --bg-raised: var(--gray-900);
+    --bg-subtle: color-mix(in srgb, var(--gray-800) 55%, var(--gray-950));
+    --bg-hover: var(--gray-800);
+    --bg-active: var(--gray-700);
+    --bg-overlay: color-mix(in srgb, #000 62%, transparent);
+
+    --fg: var(--gray-100);
+    --fg-muted: var(--gray-400);
+    --fg-subtle: var(--gray-500);
+    --fg-disabled: var(--gray-600);
+    --fg-on-accent: var(--gray-0);
+    --fg-link: var(--brand-300);
+
+    --border: var(--gray-800);
+    --border-strong: var(--gray-700);
+    --ring: var(--brand-400);
+
+    --accent: var(--brand-500);
+    --accent-hover: var(--brand-400);
+    --accent-active: var(--brand-300);
+    --accent-subtle: color-mix(in srgb, var(--brand-500) 20%, transparent);
+    --accent-fg: var(--brand-200);
+    --accent-border: color-mix(in srgb, var(--brand-400) 40%, transparent);
+
+    --neutral: var(--gray-300);
+    --neutral-subtle: var(--gray-800);
+    --neutral-fg: var(--gray-200);
+    --neutral-border: var(--gray-700);
+    --neutral-solid-fg: var(--gray-950);
+
+    --info: var(--blue-400);
+    --info-subtle: color-mix(in srgb, var(--blue-400) 16%, transparent);
+    --info-fg: var(--blue-200);
+    --info-border: color-mix(in srgb, var(--blue-400) 38%, transparent);
+    --info-solid-fg: var(--gray-950);
+
+    --success: var(--green-400);
+    --success-subtle: color-mix(in srgb, var(--green-400) 16%, transparent);
+    --success-fg: var(--green-200);
+    --success-border: color-mix(in srgb, var(--green-400) 38%, transparent);
+    --success-solid-fg: var(--gray-950);
+
+    --warning: var(--amber-400);
+    --warning-subtle: color-mix(in srgb, var(--amber-400) 16%, transparent);
+    --warning-fg: var(--amber-200);
+    --warning-border: color-mix(in srgb, var(--amber-400) 38%, transparent);
+    --warning-solid-fg: var(--gray-950);
+
+    --danger: var(--red-400);
+    --danger-subtle: color-mix(in srgb, var(--red-400) 16%, transparent);
+    --danger-fg: var(--red-200);
+    --danger-border: color-mix(in srgb, var(--red-400) 38%, transparent);
+    --danger-solid-fg: var(--gray-950);
+
+    --series-1: var(--brand-400);
+    --series-2: var(--green-400);
+    --series-3: var(--amber-400);
+    --series-4: var(--red-400);
+    --series-5: var(--blue-400);
+    --series-6: var(--gray-400);
+
+    --sh-float: 0 6px 20px -2px rgb(0 0 0 / 0.5), 0 0 0 1px var(--border);
+    --sh-overlay: 0 20px 56px -8px rgb(0 0 0 / 0.6), 0 0 0 1px var(--border);
+
+    --shiki-foreground: var(--fg);
+    --shiki-token-keyword: var(--brand-300);
+    --shiki-token-function: var(--amber-200);
+    --shiki-token-constant: var(--blue-200);
+    --shiki-token-string: var(--green-200);
+    --shiki-token-string-expression: var(--green-200);
+    --shiki-token-comment: var(--gray-500);
+    --shiki-token-parameter: var(--fg);
+    --shiki-token-punctuation: var(--fg-muted);
+    --shiki-token-link: var(--fg-link);
+    --border-ink: var(--gray-300);
+    --guide: color-mix(in srgb, var(--gray-100) 8%, transparent);
+    --guide-dash: color-mix(in srgb, var(--gray-100) 13%, transparent);
+    --badge-stroke: var(--brand-500);
+    --badge-fill: color-mix(in srgb, var(--brand-500) 20%, var(--gray-950));
+    --badge-icon: var(--brand-200);
+    --handle-bg: var(--gray-950);
+    --handle-border: var(--gray-500);
+    --traffic: var(--gray-700);
+    --grain-opacity: 0.18;
+    --grain-blend: screen;
+    --hx-waves-horizon: #172e5e;
+    --hx-waves-wave: #3a6cd1;
+    --hx-waves-crest: #bcd0f5;
+    --hx-dots-from: #6f7c91;
+    --hx-dots-to: #526076;
+    --hx-dots-glow: #1a3778;
+    --hx-glass-base: rgba(23, 32, 51, 0.5);
+    --hx-glass-pill: rgba(255, 255, 255, 0.06);
+    --hx-glass-border: rgba(255, 255, 255, 0.1);
+    --hx-glass-highlight: rgba(255, 255, 255, 0.08);
+    --hx-glass-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+    --hx-glass-fallback: rgba(23, 32, 51, 0.92);
+  }
+}
+
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: var(--gray-950);
+  --bg-raised: var(--gray-900);
+  --bg-subtle: color-mix(in srgb, var(--gray-800) 55%, var(--gray-950));
+  --bg-hover: var(--gray-800);
+  --bg-active: var(--gray-700);
+  --bg-overlay: color-mix(in srgb, #000 62%, transparent);
+
+  --fg: var(--gray-100);
+  --fg-muted: var(--gray-400);
+  --fg-subtle: var(--gray-500);
+  --fg-disabled: var(--gray-600);
+  --fg-on-accent: var(--gray-0);
+  --fg-link: var(--brand-300);
+
+  --border: var(--gray-800);
+  --border-strong: var(--gray-700);
+  --ring: var(--brand-400);
+
+  --accent: var(--brand-500);
+  --accent-hover: var(--brand-400);
+  --accent-active: var(--brand-300);
+  --accent-subtle: color-mix(in srgb, var(--brand-500) 20%, transparent);
+  --accent-fg: var(--brand-200);
+  --accent-border: color-mix(in srgb, var(--brand-400) 40%, transparent);
+
+  --neutral: var(--gray-300);
+  --neutral-subtle: var(--gray-800);
+  --neutral-fg: var(--gray-200);
+  --neutral-border: var(--gray-700);
+  --neutral-solid-fg: var(--gray-950);
+
+  --info: var(--blue-400);
+  --info-subtle: color-mix(in srgb, var(--blue-400) 16%, transparent);
+  --info-fg: var(--blue-200);
+  --info-border: color-mix(in srgb, var(--blue-400) 38%, transparent);
+  --info-solid-fg: var(--gray-950);
+
+  --success: var(--green-400);
+  --success-subtle: color-mix(in srgb, var(--green-400) 16%, transparent);
+  --success-fg: var(--green-200);
+  --success-border: color-mix(in srgb, var(--green-400) 38%, transparent);
+  --success-solid-fg: var(--gray-950);
+
+  --warning: var(--amber-400);
+  --warning-subtle: color-mix(in srgb, var(--amber-400) 16%, transparent);
+  --warning-fg: var(--amber-200);
+  --warning-border: color-mix(in srgb, var(--amber-400) 38%, transparent);
+  --warning-solid-fg: var(--gray-950);
+
+  --danger: var(--red-400);
+  --danger-subtle: color-mix(in srgb, var(--red-400) 16%, transparent);
+  --danger-fg: var(--red-200);
+  --danger-border: color-mix(in srgb, var(--red-400) 38%, transparent);
+  --danger-solid-fg: var(--gray-950);
+
+  --series-1: var(--brand-400);
+  --series-2: var(--green-400);
+  --series-3: var(--amber-400);
+  --series-4: var(--red-400);
+  --series-5: var(--blue-400);
+  --series-6: var(--gray-400);
+
+  --sh-float: 0 6px 20px -2px rgb(0 0 0 / 0.5), 0 0 0 1px var(--border);
+  --sh-overlay: 0 20px 56px -8px rgb(0 0 0 / 0.6), 0 0 0 1px var(--border);
+
+  --shiki-foreground: var(--fg);
+  --shiki-token-keyword: var(--brand-300);
+  --shiki-token-function: var(--amber-200);
+  --shiki-token-constant: var(--blue-200);
+  --shiki-token-string: var(--green-200);
+  --shiki-token-string-expression: var(--green-200);
+  --shiki-token-comment: var(--gray-500);
+  --shiki-token-parameter: var(--fg);
+  --shiki-token-punctuation: var(--fg-muted);
+  --shiki-token-link: var(--fg-link);
+  --border-ink: var(--gray-300);
+  --guide: color-mix(in srgb, var(--gray-100) 8%, transparent);
+  --guide-dash: color-mix(in srgb, var(--gray-100) 13%, transparent);
+  --badge-stroke: var(--brand-500);
+  --badge-fill: color-mix(in srgb, var(--brand-500) 20%, var(--gray-950));
+  --badge-icon: var(--brand-200);
+  --handle-bg: var(--gray-950);
+  --handle-border: var(--gray-500);
+  --traffic: var(--gray-700);
+  --grain-opacity: 0.18;
+  --grain-blend: screen;
+  --hx-waves-horizon: #172e5e;
+  --hx-waves-wave: #3a6cd1;
+  --hx-waves-crest: #bcd0f5;
+  --hx-dots-from: #6f7c91;
+  --hx-dots-to: #526076;
+  --hx-dots-glow: #1a3778;
+  --hx-glass-base: rgba(23, 32, 51, 0.5);
+  --hx-glass-pill: rgba(255, 255, 255, 0.06);
+  --hx-glass-border: rgba(255, 255, 255, 0.1);
+  --hx-glass-highlight: rgba(255, 255, 255, 0.08);
+  --hx-glass-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  --hx-glass-fallback: rgba(23, 32, 51, 0.92);
+}

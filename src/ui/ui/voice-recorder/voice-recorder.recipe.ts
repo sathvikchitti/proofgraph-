@@ -1,0 +1,1 @@
+import { cva } from "class-variance-authority"; export const voiceRecorderRecipe={root:cva("flex flex-wrap items-center gap-2 rounded-card border border-border bg-bg-raised p-3"),level:cva("h-2 w-24 overflow-hidden rounded-full bg-bg-sunken"),bar:cva("h-full bg-danger transition-all"),status:cva("text-sm text-fg-muted")};
